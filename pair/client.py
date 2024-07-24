@@ -16,19 +16,17 @@ def start_client(host='127.0.0.1', port=65432):
         if message.lower() == 'exit':
             break
 
-        send_message_to_name(message, client_name)
-        print(f"Sent to server: {message}")
+        try:
+            send_message_to_connection(message, client)
+            print(f"Sent to server: {message}")
 
-        while not has_messages_on_name(client_name):
-            delay(1)  # wait for a short period to avoid busy waiting
-
-        while has_messages_on_name(client_name):
-            server_message = read_message()
-            if server_message:
-                response_text = message_data(server_message)
-                print(f"Received from server: {response_text}")
-
-    close_connection(client)
+            while has_messages_on_connection(client):
+                server_message = read_message(client)
+                if server_message:
+                    response_text = message_data(server_message)
+                    print(f"Received from server: {response_text}")
+        except Exception as e:
+            print(f"Error sending or receiving message: {e}")
 
 if __name__ == "__main__":
     start_client()
