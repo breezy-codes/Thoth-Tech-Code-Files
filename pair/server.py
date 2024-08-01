@@ -1,41 +1,42 @@
 from splashkit import *
 
-def start_server(host='127.0.0.1', port=65432):
-    server_name = "MyServer"
-    server = create_server_with_port(server_name, port)
+def start_server(name, port):
+    try:
+        # Create the server
+        server = create_server_with_port(name, port)
+        print(f"Server '{name}' started, listening on port {port}")
 
-    if server:
-        print(f"Server started, listening on {host}:{port}")
-    else:
-        print("Failed to start server.")
-        return
-
-    while True:
-        print("Waiting for a new connection...")
-        new_client = None
-        while not new_client:
+        while True:
+            # Check for new connections and network activity
+            check_network_activity()
+            
             if accept_new_connection(server):
-                new_client = fetch_new_connection(server)
+                connection = last_connection(server)
+                client_name = connection_ip(connection)
+                print(f"Connected by {client_name}")
 
-        client_ip = str(connection_ip(new_client))
-        client_port = connection_port(new_client)
-        client_name = f"{client_ip}:{client_port}"
-        print(f"Connected by {client_name}")
+                while is_connection_open(connection):
+                    # Read message data from the connection
+                    if has_messages_on_connection(connection):
+                        data = read_message_data_from_connection(connection)
+                        if not data:
+                            break
+                        print(f"Received from client: {data}")
 
-        while has_connection(client_name):
-            if has_messages_on_connection(new_client):
-                client_message = read_message(new_client)
-                if client_message:
-                    message_text = message_data(client_message)
-                    print(f"Received from client {client_name}: {message_text}")
-                    response_message = f"Message accepted: {message_text}"
-                    send_message_to_connection(response_message, new_client)
-                    print(f"Response sent to client {client_name}")
-
-            delay(1)
-
-        print(f"Client {client_name} disconnected")
-        close_connection(new_client)
+                        # Send confirmation back to the client
+                        confirmation_message = f"Server received the message: {data}"
+                        send_message_to_connection(confirmation_message, connection)
+                        print(f"Responded to client {client_name}")
+                    check_network_activity()
+                
+                # Client disconnected
+                print(f"Client {client_name} disconnected.")
+    except Exception as e:
+        print(f"Server error: {e}")
+    finally:
+        if server:
+            close_connection(server)
+        print("Server closed.")
 
 if __name__ == "__main__":
-    start_server()
+    start_server("MyServer", 65432)

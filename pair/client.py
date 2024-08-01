@@ -1,32 +1,27 @@
 from splashkit import *
 
-def start_client(host='127.0.0.1', port=65432):
-    client_name = "ClientConnection"
+def start_client(name, host='127.0.0.1', port=65432):
+    # Create the client connection
+    client = open_connection(name, host, port)
+    print(f"Connected to server at {host}:{port}")
 
-    client = open_connection(client_name, host, port)
-
-    if client:
-        print(f"Connected to server at {host}:{port}")
-    else:
-        print("Failed to connect to server.")
-        return
-
-    while True:
+    while is_connection_open(client):
+        # Get user input
         message = input("Enter message to send (or 'exit' to quit): ")
         if message.lower() == 'exit':
             break
+        # Send data to the server
+        send_message_to_connection(message, client)
+        # Check for new network activity and wait for the server response
+        while True:
+            check_network_activity()
+            if has_messages_on_connection(client):
+                msg = read_message_data_from_connection(client)
+                print(f"Received from server: {msg}")
+                break
 
-        try:
-            send_message_to_connection(message, client)
-            print(f"Sent to server: {message}")
-
-            while has_messages_on_connection(client):
-                server_message = read_message(client)
-                if server_message:
-                    response_text = message_data(server_message)
-                    print(f"Received from server: {response_text}")
-        except Exception as e:
-            print(f"Error sending or receiving message: {e}")
+    # Close the client connection
+    close_connection(client)
 
 if __name__ == "__main__":
-    start_client()
+    start_client("MyClient", "127.0.0.1", 65432)
