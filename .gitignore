@@ -1,2 +1,11 @@
 *.idea
 pair/logs/splashkit.log
+
+c-plus/logs/
+c-plus/myeasylog.log
+
+python/logs/
+python/myeasylog.log
+
+c-sharp/logs/
+c-sharp/myeasylog.log
