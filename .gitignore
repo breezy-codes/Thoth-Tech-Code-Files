@@ -1,0 +1,14 @@
+*.idea
+pair/logs/splashkit.log
+
+two-programs/c-plus/logs/
+two-programs/c-plus/myeasylog.log
+
+two-programs/python/logs/
+two-programs/python/myeasylog.log
+
+two-programs/c-sharp/client/logs/
+two-programs/c-sharp/server/logs/
+
+two-programs/c-sharp/client/myeasylog.log
+two-programs/c-sharp/server/myeasylog.log
