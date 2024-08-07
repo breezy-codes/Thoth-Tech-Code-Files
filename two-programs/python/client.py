@@ -11,6 +11,7 @@ def start_client(name, host='127.0.0.1', port=65432):
         if message.lower() == 'exit':
             break
         # Send data to the server
+        print(f"Sending to server: {message}")
         send_message_to_connection(message, client)
         # Check for new network activity and wait for the server response
         while True:
