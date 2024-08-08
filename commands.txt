@@ -1,0 +1,12 @@
+python -
+skm python3 file.py
+
+C++ -
+g++ file.cpp -l SplashKit -o file
+./file
+
+C# -
+dotnet new console -n MyProject
+cd MyProject
+dotnet add package SplashKit
+dotnet run build
