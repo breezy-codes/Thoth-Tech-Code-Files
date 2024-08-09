@@ -6,4 +6,30 @@ The tutorial review covered testing if the code provided in the tutorial works a
 
 ## Testing C++ Code
 
-![C++ Code Testing](write_line/test images/write_line_1_cpp_test.png)
+### Write Line Example
+
+![C++ Code Testing](test-images/write_line_1_cpp_test.png)
+
+### Charlie the Unicorn Example
+
+![C++ Code Testing](test-images/write_line_2_cpp_test.png)
+
+## Testing Python Code
+
+### Write Line Example
+
+![Python Code Testing](test-images/write_line_1_python_test.png)
+
+### Charlie the Unicorn Example
+
+![Python Code Testing](test-images/write_line_2_python_test.png)
+
+## Testing C# Code
+
+### Write Line Example
+
+![C# Code Testing](test-images/write_line_1_csharp_test.png)
+
+### Charlie the Unicorn Example
+
+![C# Code Testing](test-images/write_line_2_csharp_test.png)
