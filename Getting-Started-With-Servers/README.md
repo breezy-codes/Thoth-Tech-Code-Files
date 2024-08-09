@@ -1,6 +1,6 @@
 # Code Testing
 
-This folder contains the tutorial review for [Terminal Usage Page](https://splashkit.io/guides/networking/0-getting-started-with-servers/) on the SplashKit website.
+This folder contains the tutorial review for [Getting Started with Servers](https://splashkit.io/guides/networking/0-getting-started-with-servers/) on the SplashKit website.
 
 The tutorial review covered testing if the code provided in the tutorial works as expected. The code was tested by running the code in the terminal and checking if the output matched the expected output. There was some errors within the C++ Code, specifically in step 3 and step 4 the tutorial used `web_server` when it should've been `start_web_server`. This was fixed and updated in the tutorial on Splashkit.
 

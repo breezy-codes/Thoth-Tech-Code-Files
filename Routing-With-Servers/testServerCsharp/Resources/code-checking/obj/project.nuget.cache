@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "bfgzxKkpBtLVgNqRjKOAaAfyIsxRi9HpkdcDCmR7hm1iSeEGJqFf4EOfoHbgohuGB034ZNT0J9e9h/+sT25qbQ==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/Routing-With-Servers/testServerCsharp/Resources/code-checking/Server.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

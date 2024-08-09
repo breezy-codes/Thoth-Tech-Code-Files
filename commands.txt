@@ -12,4 +12,4 @@ dotnet add package SplashKit
 dotnet run build
 
 
-g++ rest.cpp -l SplashKit -o rest
+g++ handling.cpp -l SplashKit -o handling
