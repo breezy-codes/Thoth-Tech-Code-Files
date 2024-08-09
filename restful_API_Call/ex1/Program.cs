@@ -12,5 +12,3 @@ SplashKit.WriteLine("ID     => " + SplashKit.JsonReadNumberAsInt(jsonResponse, "
 SplashKit.WriteLine("Title  => " + SplashKit.JsonReadString(jsonResponse, "title"));
 SplashKit.WriteLine("Body   => " + SplashKit.JsonReadString(jsonResponse, "body"));
 SplashKit.WriteLine("================");
-
-SplashKit.FreeJson(jsonResponse);
