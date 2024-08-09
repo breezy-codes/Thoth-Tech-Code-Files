@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kCMpDG1lfm4wjjbtZF7m9rgqcSCUWFg9KIt5m8Q58hPh4sLelBuqWUM9vrwJYj8mEdfDTxLd0krsinI1k9msQw==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/restful_API_Call/ex1/ex1.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
