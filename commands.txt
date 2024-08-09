@@ -10,3 +10,6 @@ dotnet new console -n MyProject
 cd MyProject
 dotnet add package SplashKit
 dotnet run build
+
+
+g++ rest.cpp -l SplashKit -o rest
