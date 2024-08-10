@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qG/qoLoj0n3Hmxdf/3S2kiE6XwkPyTMkdHDt4fWI/JMyzCm5Yl6L9m1cSQcew73iWhtXfAdn1cI8s+cPgjTzpQ==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/graphics_use_case/Refresh-Screen/Refresh-Screen.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
