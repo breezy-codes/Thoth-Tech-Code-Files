@@ -3,7 +3,7 @@ from splashkit import *
 def start_client(name, host='127.0.0.1', port=65432):
     # Create the client connection
     client = open_connection(name, host, port)
-    print(f"Connected to server at {host}:{port}")
+    write_line(f"Connected to server at {host}:{port}")
 
     while is_connection_open(client):
         # Get user input
@@ -11,14 +11,14 @@ def start_client(name, host='127.0.0.1', port=65432):
         if message.lower() == 'exit':
             break
         # Send data to the server
-        print(f"Sending to server: {message}")
+        write_line(f"Sending to server: {message}")
         send_message_to_connection(message, client)
         # Check for new network activity and wait for the server response
         while True:
             check_network_activity()
             if has_messages_on_connection(client):
                 msg = read_message_data_from_connection(client)
-                print(f"Received from server: {msg}")
+                write_line(f"Received from server: {msg}")
                 break
 
     # Close the client connection

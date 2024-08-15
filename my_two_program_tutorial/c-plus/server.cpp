@@ -1,6 +1,4 @@
 #include "splashkit.h"
-#include <stdexcept> 
-#include <string> 
 
 void start_server(const string& name, int port) {
     server_socket server = nullptr;

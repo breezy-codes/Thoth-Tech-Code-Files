@@ -4,7 +4,7 @@ def start_server(name, port):
     try:
         # Create the server
         server = create_server_with_port(name, port)
-        print(f"Server '{name}' started, listening on port {port}")
+        write_line(f"Server '{name}' started, listening on port {port}")
 
         while True:
             # Check for new connections and network activity
@@ -13,7 +13,7 @@ def start_server(name, port):
             if accept_new_connection(server):
                 connection = last_connection(server)
                 client_name = connection_ip(connection)
-                print(f"Connected by {client_name}")
+                write_line(f"Connected by {client_name}")
 
                 while is_connection_open(connection):
                     # Read message data from the connection
@@ -21,22 +21,22 @@ def start_server(name, port):
                         data = read_message_data_from_connection(connection)
                         if not data:
                             break
-                        print(f"Received from client: {data}")
+                        write_line(f"Received from client: {data}")
 
                         # Send confirmation back to the client
                         confirmation_message = f"Server received the message: {data}"
                         send_message_to_connection(confirmation_message, connection)
-                        print(f"Responded to client {client_name}")
+                        write_line(f"Responded to client {client_name}")
                     check_network_activity()
                 
                 # Client disconnected
-                print(f"Client {client_name} disconnected.")
+                write_line(f"Client {client_name} disconnected.")
     except Exception as e:
-        print(f"Server error: {e}")
+        write_line(f"Server error: {e}")
     finally:
         if server:
             close_connection(server)
-        print("Server closed.")
+        write_line("Server closed.")
 
 if __name__ == "__main__":
     start_server("MyServer", 65432)
