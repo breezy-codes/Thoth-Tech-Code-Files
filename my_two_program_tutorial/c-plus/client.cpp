@@ -1,5 +1,4 @@
 #include "splashkit.h"
-#include <string> 
 
 void start_client(const string& name, const string& host = "127.0.0.1", int port = 65432) {
     // Create the client connection

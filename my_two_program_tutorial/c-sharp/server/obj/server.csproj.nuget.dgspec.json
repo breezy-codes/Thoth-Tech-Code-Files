@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/c-sharp/server/server.csproj": {}
+    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/my_two_program_tutorial/c-sharp/server/server.csproj": {}
   },
   "projects": {
-    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/c-sharp/server/server.csproj": {
+    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/my_two_program_tutorial/c-sharp/server/server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/c-sharp/server/server.csproj",
+        "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/my_two_program_tutorial/c-sharp/server/server.csproj",
         "projectName": "server",
-        "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/c-sharp/server/server.csproj",
+        "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/my_two_program_tutorial/c-sharp/server/server.csproj",
         "packagesPath": "/home/breezy/.nuget/packages/",
-        "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/c-sharp/server/obj/",
+        "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/my_two_program_tutorial/c-sharp/server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/breezy/.nuget/NuGet/NuGet.Config"
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

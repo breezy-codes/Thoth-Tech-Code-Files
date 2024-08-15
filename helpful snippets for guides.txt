@@ -1,0 +1,23 @@
+<Tabs syncKey="code-language">
+  <TabItem label="C++">
+
+```cpp
+
+```
+
+  </TabItem>
+  <TabItem label="C#">
+
+```csharp
+
+```
+
+  </TabItem>
+  <TabItem label="Python">
+
+```python
+
+```
+
+  </TabItem>
+</Tabs>

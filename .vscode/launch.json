@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/c-plus",
-      "program": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/c-plus/build/Debug/outDebug",
+      "cwd": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/my_two_program_tutorial/c-plus",
+      "program": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/my_two_program_tutorial/c-plus/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
