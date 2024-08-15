@@ -8,28 +8,28 @@ The tutorial review covered testing if the code provided in the tutorial works a
 
 ### Write Line Example
 
-![C++ Code Testing](test-images/write_line_1_cpp_test.png)
+![C++ Code Testing](images/write_line_1_cpp_test.png)
 
 ### Charlie the Unicorn Example
 
-![C++ Code Testing](test-images/write_line_2_cpp_test.png)
+![C++ Code Testing](images/write_line_2_cpp_test.png)
 
 ## Testing Python Code
 
 ### Write Line Example
 
-![Python Code Testing](test-images/write_line_1_python_test.png)
+![Python Code Testing](images/write_line_1_python_test.png)
 
 ### Charlie the Unicorn Example
 
-![Python Code Testing](test-images/write_line_2_python_test.png)
+![Python Code Testing](images/write_line_2_python_test.png)
 
 ## Testing C# Code
 
 ### Write Line Example
 
-![C# Code Testing](test-images/write_line_1_csharp_test.png)
+![C# Code Testing](images/write_line_1_csharp_test.png)
 
 ### Charlie the Unicorn Example
 
-![C# Code Testing](test-images/write_line_2_csharp_test.png)
+![C# Code Testing](images/write_line_2_csharp_test.png)

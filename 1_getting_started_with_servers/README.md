@@ -8,7 +8,7 @@ The tutorial review covered testing if the code provided in the tutorial works a
 
 ### Step 2:
 
-![Step 2](test-images/6step2-cpp.png)
+![Step 2](images/6step2-cpp.png)
 
 ### Step 3:
 
@@ -22,40 +22,40 @@ Waiting for a request - navigate to http://localhost:8080
 2024-08-09 18:00:35,112 WARNING [default] stop_web_server called on an invalid server
 ```
 
-![Step 3](test-images/7step3-4-error-cpp.png)
+![Step 3](images/7step3-4-error-cpp.png)
 
 After fixing:
 
-![Step 3](test-images/8step3-fixed-cpp.png)
+![Step 3](images/8step3-fixed-cpp.png)
 
 ### Step 4:
 
-![Step 4](test-images/9step4-fixed-cpp.png)
+![Step 4](images/9step4-fixed-cpp.png)
 
 ## Testing Python Code
 
 ### Step 2:
 
-![Step 2](test-images/1step2-python.png)
+![Step 2](images/1step2-python.png)
 
 ### Step 3:
 
-![Step 3](test-images/2step3-python.png)
+![Step 3](images/2step3-python.png)
 
 ### Step 4:
 
-![Step 4](test-images/3step4-python.png)
+![Step 4](images/3step4-python.png)
 
 ## Testing C# Code
 
 ### Step 2:
 
-![Step 2](test-images/12step2-csharp.png)
+![Step 2](images/12step2-csharp.png)
 
 ### Step 3:
 
-![Step 3](test-images/13step3-csharp.png)
+![Step 3](images/13step3-csharp.png)
 
 ### Step 4:
 
-![Step 4](test-images/14step4-csharp.png)
+![Step 4](images/14step4-csharp.png)

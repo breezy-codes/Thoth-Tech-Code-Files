@@ -10,28 +10,28 @@ In addition the checking requests C# code used static void main and program clas
 
 ### Checking Requests
 
-![Checking Requests](test-images/10request-login-cpp.png)
+![Checking Requests](images/10request-login-cpp.png)
 
 ### Handling Requests
 
-![Handling Requests](test-images/11handling-multiple-requests-cpp.png)
+![Handling Requests](images/11handling-multiple-requests-cpp.png)
 
 ## Testing Python Code
 
 ### Checking Requests
 
-![Checking Requests](test-images/4request-login-python.png)
+![Checking Requests](images/4request-login-python.png)
 
 ### Handling Requests
 
-![Handling Requests](test-images/5handling-multiple-requests.png)
+![Handling Requests](images/5handling-multiple-requests.png)
 
 ## Testing C# Code
 
 ### Checking Requests
 
-![Checking Requests](test-images/15request-login-csharp.png)
+![Checking Requests](images/15request-login-csharp.png)
 
 ### Handling Requests
 
-![Handling Requests](test-images/16handling-multiple-requests.png)
+![Handling Requests](images/16handling-multiple-requests.png)

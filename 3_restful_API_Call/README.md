@@ -8,40 +8,40 @@ The tutorial review covered testing if the code provided in the tutorial works a
 
 ### Example 1:
 
-![alt text](test-images/1-ex1-cpp.png)
+![alt text](images/1-ex1-cpp.png)
 
 ### Example 2:
 
-![alt text](test-images/2-ex2-cpp.png)
+![alt text](images/2-ex2-cpp.png)
 
 ### Example 3:
 
-![alt text](test-images/3-ex3-cpp.png)
+![alt text](images/3-ex3-cpp.png)
 
 ## Testing Python Code
 
 ### Example 1:
 
-![alt text](test-images/4-ex1-python.png)
+![alt text](images/4-ex1-python.png)
 
 ### Example 2:
 
-![alt text](test-images/5-ex2-python.png)
+![alt text](images/5-ex2-python.png)
 
 ### Example 3:
 
-![alt text](test-images/6-ex3-python.png)
+![alt text](images/6-ex3-python.png)
 
 ## Testing C# Code
 
 ### Example 1:
 
-![alt text](test-images/7-ex1-csharp.png)
+![alt text](images/7-ex1-csharp.png)
 
 ### Example 2:
 
-![alt text](test-images/8-ex2-csharp.png)
+![alt text](images/8-ex2-csharp.png)
 
 ### Example 3:
 
-![alt text](test-images/9-ex3-csharp.png)
+![alt text](images/9-ex3-csharp.png)
