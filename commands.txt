@@ -12,4 +12,4 @@ dotnet add package SplashKit
 dotnet run build
 
 
-g++ server.cpp -l SplashKit -o server
+g++ clear_screen_background.cpp -l SplashKit -o clear_screen_background
