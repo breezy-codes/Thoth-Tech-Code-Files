@@ -1,10 +1,10 @@
 #include "splashkit.h"
-#include <string>
+using std::to_string;
 
-void start_client(const std::string& name, const std::string& host = "127.0.0.1", int port = 65432) {
+void start_client(const string& name, const string& host = "127.0.0.1", int port = 65432) {
     // Create the client connection
     connection client = open_connection(name, host, port);
-    write_line("Connected to server at " + host + ":" + std::to_string(port));
+    write_line("Connected to server at " + host + ":" + to_string(port));
 
     // Keep the connection open
     while (is_connection_open(client)) {

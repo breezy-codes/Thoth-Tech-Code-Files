@@ -2,7 +2,7 @@ python -
 skm python3 file.py
 
 C++ -
-g++ file.cpp -l SplashKit -o file
+g++ start-client.cpp -l SplashKit -o start-client
 ./file
 
 C# -

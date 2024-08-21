@@ -1,11 +1,12 @@
 #include "splashkit.h"
+using std::to_string;
 
 void start_server(const string& name, int port) {
     server_socket server = nullptr;
 
     // Create the server
     server = create_server(name, port);
-    write_line("Server '" + name + "' started, listening on port " + std::to_string(port));
+    write_line("Server '" + name + "' started, listening on port " + to_string(port));
 
     while (true) {
         // Check for new connections and network activity
@@ -14,7 +15,7 @@ void start_server(const string& name, int port) {
         if (accept_new_connection(server)) {
             connection client_connection = last_connection(server);
             unsigned int client_ip = connection_ip(client_connection);
-            write_line("Connected by " + std::to_string(client_ip));
+            write_line("Connected by " + to_string(client_ip));
 
             while (is_connection_open(client_connection)) {
                 // Read message data from the connection
@@ -29,13 +30,13 @@ void start_server(const string& name, int port) {
                     // Send confirmation back to the client
                     string confirmation_message = "Server received the message: " + data;
                     send_message_to(confirmation_message, client_connection);
-                    write_line("Responded to client " + std::to_string(client_ip));
+                    write_line("Responded to client " + to_string(client_ip));
                 }
                 check_network_activity();
             }
 
             // Client disconnected
-            write_line("Client " + std::to_string(client_ip) + " disconnected.");
+            write_line("Client " + to_string(client_ip) + " disconnected.");
         }
     }
 
