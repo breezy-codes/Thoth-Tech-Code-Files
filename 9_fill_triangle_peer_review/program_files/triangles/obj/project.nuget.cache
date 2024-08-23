@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5QSK3TKY5wEhlSuhZS0SyRkpv/5Ai083gA3w5nWrbt/8zJrzBb5XxhbGoKjFXymWPZjWT7Toy5oGRmh06jjn9A==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/9_fill_triangle_peer_review/program_files/triangles/sprites.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

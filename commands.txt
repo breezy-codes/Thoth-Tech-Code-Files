@@ -15,4 +15,4 @@ dotnet run build
 
 
 
-g++ sprite.cpp -l SplashKit -o sprite
+g++ triangle.cpp -l SplashKit -o triangle
