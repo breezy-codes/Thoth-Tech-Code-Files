@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/1mouseclicked/1mouseclicked.csproj": {}
+    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/9mouseY/1mouseclicked.csproj": {}
   },
   "projects": {
-    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/1mouseclicked/1mouseclicked.csproj": {
+    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/9mouseY/1mouseclicked.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/1mouseclicked/1mouseclicked.csproj",
+        "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/9mouseY/1mouseclicked.csproj",
         "projectName": "1mouseclicked",
-        "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/1mouseclicked/1mouseclicked.csproj",
+        "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/9mouseY/1mouseclicked.csproj",
         "packagesPath": "/home/breezy/.nuget/packages/",
-        "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/1mouseclicked/obj/",
+        "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/9mouseY/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/breezy/.nuget/NuGet/NuGet.Config"

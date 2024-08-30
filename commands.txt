@@ -15,4 +15,4 @@ dotnet run build
 
 
 
-g++ triangle.cpp -l SplashKit -o triangle
+g++ 11mouseshow.cpp -l SplashKit -o 11mouseshow

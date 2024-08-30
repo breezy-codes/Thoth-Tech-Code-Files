@@ -41,11 +41,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/1mouseclicked/1mouseclicked.csproj",
+      "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/5mousewheel/1mouseclicked.csproj",
       "projectName": "1mouseclicked",
-      "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/1mouseclicked/1mouseclicked.csproj",
+      "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/5mousewheel/1mouseclicked.csproj",
       "packagesPath": "/home/breezy/.nuget/packages/",
-      "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/1mouseclicked/obj/",
+      "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/10_mouse_input_review_peer/program_files/csharp/5mousewheel/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/breezy/.nuget/NuGet/NuGet.Config"
