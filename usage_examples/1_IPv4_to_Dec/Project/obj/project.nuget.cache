@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IjYBujJL8xZDxRChBidKbaihy1tyKjF14E4hhiek6A4VpqW7mEKFtebo/gMIzhMYyBIf3L9a9CMuj+BsF4KssA==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/usage_examples/1_IPv4_to_Dec/Project/Project.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
