@@ -1,4 +1,3 @@
-
 from splashkit import *
 
 def main():
