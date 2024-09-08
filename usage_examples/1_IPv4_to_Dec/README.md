@@ -13,3 +13,9 @@ This is a usage example for the IPv4 to Dec conversion. It contains a small prog
 ## Testing the C# Code
 
 ![alt text](images/csharp.png)
+
+## Preview of the Site
+
+![alt text](images/running1.png)
+
+![alt text](images/running2.png)
