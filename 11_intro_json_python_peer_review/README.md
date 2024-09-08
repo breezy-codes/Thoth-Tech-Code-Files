@@ -37,4 +37,3 @@ When reviewing the page I noted the structure of how they show the build command
 So I opened up my local environment to try create an example that would look nicer:
 
 ![alt text](images/fix1.png)
-
