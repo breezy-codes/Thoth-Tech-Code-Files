@@ -1,0 +1,8 @@
+{
+    "gameTitle": "My New Game",
+    "screenSize": {
+      "width": 800,
+      "height": 600
+    },
+    "levels": ["level1", "level2", "level3"]
+  }
