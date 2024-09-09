@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/28Oz12LvQh8ar2io5I5qVtnWOsko9fL73AEGBilfvysn2adBQ2GKvjrZjdc4TeArGNHcE31FBBbQ29k9Ly33g==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/12_SK_camera_peer_review/program_files/Project/Project.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
