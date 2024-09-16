@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ceoxr0945orSu4PRzuX7bxxoI+7kmf23Mc8KgMn6qpXoEXg9if7ZGD1buRWJ+/Y8v1zh7ULEe3mySHGeuiHTvA==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/13_Add_OOP_json_peer_review/program_files/Code1/Code1.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
