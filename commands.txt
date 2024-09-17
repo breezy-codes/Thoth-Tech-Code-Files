@@ -6,7 +6,7 @@ g++ start-client.cpp -l SplashKit -o start-client
 ./file
 
 C# -
-dotnet new console -n Code1
+dotnet new console -n Code2
 cd MyProject
 dotnet add package SplashKit
 dotnet run build
