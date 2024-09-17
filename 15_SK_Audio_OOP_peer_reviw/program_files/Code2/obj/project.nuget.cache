@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "lANiLV6RepK8b0m7N/V5SpWDs/IaojDx54URoHzPLwfz2rkW51BXKpOOG4IorbO4lYHgYmkZRxeJKbbd01KNBw==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/15_SK_Audio_OOP_peer_reviw/program_files/Code2/Code1.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
