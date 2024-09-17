@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EorJNi+nuh0rJlfFVjcS6GBCYVXneR7s2XR9/1wMi2o/VkN95HrNIm7Pvhq4Bp7C4ii8++6N29gsfaQ4LJ1B4A==",
+  "dgSpecHash": "6ZYZcwJ93xZDc30h4nWdrleSV9MAnHThTimsJX4ykg66qbSOq8C89lgtt7vSsxn/4TqICLb2rNuXPVCYbA1LYw==",
   "success": true,
-  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/14_SK_camera_peer_review/program_files/Code2/Code2.csproj",
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/14_SK_camera_OOP_peer_review/program_files/Code2/Code2.csproj",
   "expectedPackageFiles": [
     "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
   ],
