@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "21rbK3iaiKPPZfkI6CXN/dCU6qo5kX6BBV1IiB/IMPlgqweSUQ44SUuUUjxqE721d+VOhIS7VzNju0ZbS6CeDg==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/16_useful_util_peer_review/program_files/input_to_int1/Code1.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

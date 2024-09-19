@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aLVUVhsDWmRzvqF7n3k3dhgV3RjQx7ENYhX5fVm+lsjrPIwLvjoGoHVAAOClcKW/5Q3irjHCgwDGK4QkYFzaqg==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/16_useful_util_peer_review/program_files/manip_str1/Code1.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

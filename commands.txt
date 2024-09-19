@@ -15,4 +15,4 @@ dotnet run build
 
 
 
-g++ file.cpp -l SplashKit -o file
+g++ string_to_num.cpp -l SplashKit -o string_to_num
