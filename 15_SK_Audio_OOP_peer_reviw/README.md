@@ -17,4 +17,3 @@ The issue that needed debugging:
 Code now working:
 
 ![alt text](images/run2.png)
-
