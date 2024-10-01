@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "lWTKjX4Y/O+vYn4TX38vgxQcdXfPQlSpYMgLaeCgpKhBLK7PtZTqJjmTuKtv2yOnvGJno3p9St9Cgfj/1HwGXA==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/19_oop_restful_api/example1/Code1.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512",
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.7/microsoft.aspnetcore.app.ref.8.0.7.nupkg.sha512"
+  ],
+  "logs": []
+}
