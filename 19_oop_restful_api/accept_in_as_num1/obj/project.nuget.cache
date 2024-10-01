@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YR8rZhhzF0rvu76wppaDDgn+2hPJhskmi2FnZwdzFndc7hdSLQjftuwCYrr0mJXPaD8CpM9rYGAGzaGn9RZ8Wg==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/16_useful_util_peer_review/program_files/accept_in_as_num1/Code1.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}
