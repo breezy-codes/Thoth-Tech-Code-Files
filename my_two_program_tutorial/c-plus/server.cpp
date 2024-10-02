@@ -3,12 +3,28 @@ using std::to_string;
 
 void start_server(const string& name, int port) {
     server_socket server = nullptr;
+    bool server_running = true;  // Control flag for the server
 
     // Create the server
     server = create_server(name, port);
     write_line("Server '" + name + "' started, listening on port " + to_string(port));
 
-    while (true) {
+    // Open a graphical window for controlling the server
+    open_window("Server Control", 200, 100);
+
+    while (server_running) {
+        // Process GUI events
+        process_events();
+
+        // Draw the "Close Server" button in the GUI window
+        clear_screen(COLOR_WHITE);
+        if (button("Close Server", rectangle_from(50, 25, 100, 50))) {
+            server_running = false;
+            break;  // Exit the loop to stop the server
+        }
+        draw_interface();
+        refresh_screen();
+
         // Check for new connections and network activity
         check_network_activity();
         
@@ -40,10 +56,14 @@ void start_server(const string& name, int port) {
         }
     }
 
+    // Close the server when the loop exits
     if (server != nullptr) {
         close_server(server);
     }
     write_line("Server closed.");
+
+    // Close the GUI window
+    close_all_windows();
 }
 
 int main() {
