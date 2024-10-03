@@ -5,7 +5,6 @@ int main()
 {
     string ip_input;
     write_line("The IP address 127.0.0.1 converts to 2130706433 as an integer.");
-    write_line("The IP address 192.168.20.10 converts to 3232240650 as an integer.");
     write_line("Enter an integer to be converted to an IPv4 address (or type 'quit' to exit):");
     write_line("=========================================================");
     while (true)
