@@ -1,24 +1,25 @@
 #include "splashkit.h"
+using std::to_string;
 
 int main()
 {
-    // Greet the user
-    write_line("Hello! Welcome to the IP to string converter.");
-
-    // Prompt the user for an IP input in dotted decimal format (e.g., 192.168.1.2)
-    write_line("Please enter an IPv4 address in integer format:");
-
-    // Read the input as a string
-    string ip_input = read_line();
-
-    // Convert the input string to an integer using convert_to_integer
-    int ip_as_int = convert_to_integer(ip_input);
-
-    // Convert the integer back to the string format using ipv4_to_str
-    string ip_str = ipv4_to_str(ip_as_int);
-
-    // Display the result
-    write_line("The IP address in string format is: " + ip_str);
-
+    string ip_input;
+    write_line("The IP address 127.0.0.1 converts to 2130706433 as an integer.");
+    write_line("The IP address 192.168.20.10 converts to 3232240650 as an integer.");
+    write_line("Enter an integer to be converted to an IPv4 address (or type 'quit' to exit):");
+    write_line("=========================================================");
+    while (true)
+    {
+        write("Enter the Ipv4 to convert: ");
+        ip_input = read_line();
+        if (ip_input == "quit")
+        {break;}
+        int ip_as_int = convert_to_integer(ip_input);
+        string ip_str = ipv4_to_str(ip_as_int);
+        write_line("You entered: " + ip_input);
+        write_line("Converted the Integer to IPv4 String: " + ip_str);
+        write_line("=========================================================");
+    }
+    write_line("Goodbye!");
     return 0;
 }
