@@ -12,5 +12,4 @@ dotnet add package SplashKit
 dotnet run build
 
 
-
 g++ file.cpp -l SplashKit -o file
