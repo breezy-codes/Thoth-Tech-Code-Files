@@ -41,11 +41,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/19_oop_restful_api/example3/Code1.csproj",
+      "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/19_oop_restful_api/example3/Code1.csproj",
       "projectName": "Code1",
-      "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/19_oop_restful_api/example3/Code1.csproj",
+      "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/19_oop_restful_api/example3/Code1.csproj",
       "packagesPath": "/home/breezy/.nuget/packages/",
-      "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/19_oop_restful_api/example3/obj/",
+      "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/19_oop_restful_api/example3/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/breezy/.nuget/NuGet/NuGet.Config"
@@ -91,7 +91,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.7, 8.0.7]"
+            "version": "[8.0.8, 8.0.8]"
           }
         ],
         "frameworkReferences": {
@@ -99,7 +99,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.107/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

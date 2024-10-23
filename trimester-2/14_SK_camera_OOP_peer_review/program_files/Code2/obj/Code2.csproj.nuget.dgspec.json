@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/14_SK_camera_OOP_peer_review/program_files/Code2/Code2.csproj": {}
+    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/14_SK_camera_OOP_peer_review/program_files/Code2/Code2.csproj": {}
   },
   "projects": {
-    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/14_SK_camera_OOP_peer_review/program_files/Code2/Code2.csproj": {
+    "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/14_SK_camera_OOP_peer_review/program_files/Code2/Code2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/14_SK_camera_OOP_peer_review/program_files/Code2/Code2.csproj",
+        "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/14_SK_camera_OOP_peer_review/program_files/Code2/Code2.csproj",
         "projectName": "Code2",
-        "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/14_SK_camera_OOP_peer_review/program_files/Code2/Code2.csproj",
+        "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/14_SK_camera_OOP_peer_review/program_files/Code2/Code2.csproj",
         "packagesPath": "/home/breezy/.nuget/packages/",
-        "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/14_SK_camera_OOP_peer_review/program_files/Code2/obj/",
+        "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/14_SK_camera_OOP_peer_review/program_files/Code2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/breezy/.nuget/NuGet/NuGet.Config"
@@ -54,12 +54,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.8, 8.0.8]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

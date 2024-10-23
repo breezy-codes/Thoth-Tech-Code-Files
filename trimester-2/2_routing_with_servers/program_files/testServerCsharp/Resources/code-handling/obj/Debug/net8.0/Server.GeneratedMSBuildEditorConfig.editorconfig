@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Server
-build_property.ProjectDir = /home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/testServerCsharp/Resources/Server-CSharp/
+build_property.ProjectDir = /home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/2_routing_with_servers/program_files/testServerCsharp/Resources/code-handling/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "qG/qoLoj0n3Hmxdf/3S2kiE6XwkPyTMkdHDt4fWI/JMyzCm5Yl6L9m1cSQcew73iWhtXfAdn1cI8s+cPgjTzpQ==",
+  "dgSpecHash": "CAzwlLLQvX4/4g3ENs9dAGfFxImzqNmN1Rr8/zYLXIW8AoymElQmnn+PfquAnMYGfsh5mC3hhzeg4aH+EDG1Zw==",
   "success": true,
-  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/graphics_use_case/Refresh-Screen/Refresh-Screen.csproj",
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/5_graphics_use_case/program_files/Refresh-Screen/Refresh-Screen.csproj",
   "expectedPackageFiles": [
-    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512",
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
   ],
   "logs": []
 }

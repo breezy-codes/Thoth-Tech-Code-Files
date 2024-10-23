@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = write2
-build_property.ProjectDir = /home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/write_line/write2/
+build_property.ProjectDir = /home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/6_write_line/program_files/write2/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

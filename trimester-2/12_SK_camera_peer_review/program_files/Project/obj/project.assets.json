@@ -41,11 +41,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/12_SK_camera_peer_review/program_files/Project/Project.csproj",
+      "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/12_SK_camera_peer_review/program_files/Project/Project.csproj",
       "projectName": "Project",
-      "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/12_SK_camera_peer_review/program_files/Project/Project.csproj",
+      "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/12_SK_camera_peer_review/program_files/Project/Project.csproj",
       "packagesPath": "/home/breezy/.nuget/packages/",
-      "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/12_SK_camera_peer_review/program_files/Project/obj/",
+      "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/12_SK_camera_peer_review/program_files/Project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/breezy/.nuget/NuGet/NuGet.Config"
@@ -88,12 +88,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.8, 8.0.8]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ex1
-build_property.ProjectDir = /home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/restful_API_Call/ex1/
+build_property.ProjectDir = /home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/3_restful_API_Call/program_files/ex1/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

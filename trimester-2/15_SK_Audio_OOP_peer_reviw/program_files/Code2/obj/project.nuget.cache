@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lANiLV6RepK8b0m7N/V5SpWDs/IaojDx54URoHzPLwfz2rkW51BXKpOOG4IorbO4lYHgYmkZRxeJKbbd01KNBw==",
+  "dgSpecHash": "Rb9CeozhHuXSjIi5NlDG87EZn1eiDAuxQqod9JqHs2hqKyWVTNjhbRYhMuCxPLWyfKXLslr1ok2Sld0apH6Hcg==",
   "success": true,
-  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/15_SK_Audio_OOP_peer_reviw/program_files/Code2/Code1.csproj",
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/15_SK_Audio_OOP_peer_reviw/program_files/Code2/Code1.csproj",
   "expectedPackageFiles": [
-    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512",
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
   ],
   "logs": []
 }

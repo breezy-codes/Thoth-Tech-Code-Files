@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pLCo8qupUf+fT3FbWO5J5XDvJK8b/DaOSjrUvEycVSaz3+viQUtYAWeRoT5feOx4f5zLCnBZU3WrslGBZvzv7w==",
+  "dgSpecHash": "wCnKdD3AXaRmXX2oXEbbUezXXqtqmvG9C9QMmqcfCNkETAL6QuitmRVTJBJ+LBORrlC2IoYpv0l5wjdbEIofVg==",
   "success": true,
-  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/usage_examples/5_hex_to_dec/program_files/Project/Project.csproj",
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/usage_examples/5_hex_to_dec/program_files/Project/Project.csproj",
   "expectedPackageFiles": [
-    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512"
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512",
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
   ],
   "logs": []
 }

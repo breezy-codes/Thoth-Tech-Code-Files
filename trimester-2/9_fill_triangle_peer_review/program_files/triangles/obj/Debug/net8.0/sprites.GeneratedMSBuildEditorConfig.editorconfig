@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = sprites
-build_property.ProjectDir = /home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/9_fill_triangle_peer_review/program_files/triangles/
+build_property.ProjectDir = /home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/9_fill_triangle_peer_review/program_files/triangles/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
