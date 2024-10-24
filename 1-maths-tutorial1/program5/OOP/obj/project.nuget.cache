@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bx1Y5kNTSSjo+6zhWsgMS+2Ba8TdOlRef0xBM9la9xLtrEslxcCYUSLszIdlEvX7/vK/2ptwggGAc1L3v5syWQ==",
+  "success": true,
+  "projectFilePath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/1-maths-tutorial1/program5/OOP/Project.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512",
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
