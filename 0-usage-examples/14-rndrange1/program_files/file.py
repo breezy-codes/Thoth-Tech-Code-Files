@@ -1,15 +1,23 @@
 from splashkit import *
 
-write_line("Hello! Welcome to the IP to decimal converter.")
+write_line("Let's make this more interesting!")
 
-# Prompt the user for an IP input in dotted decimal format (e.g., 127.0.0.1)
-write_line("Please enter an IPv4 address in dotted decimal format (e.g., 127.0.0.1):")
+# Get user input for the range
+write_line("Please enter the minimum number:")
+min_value = int(read_line())
 
-# Read the input from the user
-ip_input = read_line()
+write_line("Please enter the maximum number:")
+max_value = int(read_line())
 
-# Convert the IPv4 string to a decimal
-ip_as_dec = ipv4_to_dec(ip_input)
+# Validate if min is smaller than max
+if min_value >= max_value:
+    write_line("Oops! The minimum value should be less than the maximum value.")
+else:
+    write_line(f"Get ready to generate a random number between {min_value} and {max_value}...")
+    write_line("Drum roll please...")
 
-# Display the result in decimal format
-write_line(f"The IP address in decimal format is: {ip_as_dec}")
+    # Generate a random number in the specified range
+    random_number = rnd(min_value, max_value)
+
+    write_line(f"🎲 Your lucky number is: {random_number} 🎲")
+    write_line("How does it feel? Want to try again?")

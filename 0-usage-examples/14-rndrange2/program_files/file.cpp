@@ -2,16 +2,14 @@
 
 int main()
 {
-    write_line("Please enter the lower bound:");
-    int lower = convert_to_integer(read_line());
+    write_line("Get ready to generate a random number between 1 and 100...");
+    write_line("Drum roll please...");
 
-    write_line("Please enter the upper bound:");
-    int upper = convert_to_integer(read_line());
+    // Generate a random number between 1 and 100
+    int random_number = rnd(1, 100);
 
-    // Generate a random number within the given range
-    int random_number = rnd(lower, upper);
-
-    write_line("Random number: " + std::to_string(random_number));
+    write_line("🎲 Your lucky number is: " + std::to_string(random_number) + " 🎲");
+    write_line("Feeling lucky? Maybe it's time to play the lottery!");
 
     return 0;
 }

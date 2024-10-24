@@ -1,15 +1,12 @@
 from splashkit import *
 
-write_line("Hello! Welcome to the IP to decimal converter.")
+text = "   Whitespace is sneaky!   "
 
-# Prompt the user for an IP input in dotted decimal format (e.g., 127.0.0.1)
-write_line("Please enter an IPv4 address in dotted decimal format (e.g., 127.0.0.1):")
+write_line(f"Original string with sneaky spaces: '{text}'")
+write_line("Let's get rid of those pesky spaces...")
 
-# Read the input from the user
-ip_input = read_line()
+# Trim spaces from the start and end
+trimmed = trim(text)
 
-# Convert the IPv4 string to a decimal
-ip_as_dec = ipv4_to_dec(ip_input)
-
-# Display the result in decimal format
-write_line(f"The IP address in decimal format is: {ip_as_dec}")
+write_line(f"Trimmed string: '{trimmed}'")
+write_line("Aha! Much better without those sneaky spaces!")

@@ -1,15 +1,10 @@
 ﻿using static SplashKitSDK.SplashKit;
 
-WriteLine("Hello! Welcome to the IP to decimal converter.");
+WriteLine("Get ready to generate a random number between 1 and 100...");
+WriteLine("Drum roll please...");
 
-// Prompt the user for an IP input in dotted decimal format (e.g., 127.0.0.1)
-WriteLine("Please enter an IPv4 address in dotted decimal format (e.g., 127.0.0.1):");
+// Generate a random number between 1 and 100
+int randomNumber = Rnd(1, 100);
 
-// Read the input as a string
-string ip_input = ReadLine();
-
-// Convert the IPv4 string to a decimal
-uint ip_as_dec = Ipv4ToDec(ip_input);
-
-// Display the result
-WriteLine("The IP address in decimal format is: " + ip_as_dec);
+WriteLine($"🎲 Your lucky number is: {randomNumber} 🎲");
+WriteLine("Feeling lucky? Maybe it's time to play the lottery!");

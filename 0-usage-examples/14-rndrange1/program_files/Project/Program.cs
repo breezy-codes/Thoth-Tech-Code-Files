@@ -1,15 +1,26 @@
 ﻿using static SplashKitSDK.SplashKit;
 
-WriteLine("Hello! Welcome to the IP to decimal converter.");
+WriteLine("Let's make this more interesting!");
 
-// Prompt the user for an IP input in dotted decimal format (e.g., 127.0.0.1)
-WriteLine("Please enter an IPv4 address in dotted decimal format (e.g., 127.0.0.1):");
+// Get user input for the range
+WriteLine("Please enter the minimum number:");
+int minValue = Convert.ToInt32(ReadLine());
 
-// Read the input as a string
-string ip_input = ReadLine();
+WriteLine("Please enter the maximum number:");
+int maxValue = Convert.ToInt32(ReadLine());
 
-// Convert the IPv4 string to a decimal
-uint ip_as_dec = Ipv4ToDec(ip_input);
+// Validate if min is smaller than max
+if (minValue >= maxValue)
+{
+    WriteLine("Oops! The minimum value should be less than the maximum value.");
+    return;
+}
 
-// Display the result
-WriteLine("The IP address in decimal format is: " + ip_as_dec);
+WriteLine($"Get ready to generate a random number between {minValue} and {maxValue}...");
+WriteLine("Drum roll please...");
+
+// Generate a random number in the specified range
+int randomNumber = Rnd(minValue, maxValue);
+
+WriteLine($"🎲 Your lucky number is: {randomNumber} 🎲");
+WriteLine("How does it feel? Want to try again?");
