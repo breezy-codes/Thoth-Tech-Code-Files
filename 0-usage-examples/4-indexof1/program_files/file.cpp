@@ -2,15 +2,26 @@
 
 int main()
 {
-    string sentence = "The cat is on the roof.";
-    string word = "cat";
-    write_line("Sentence: " + sentence);
-    write_line("Word: " + word);
+    // Get sentence input from the user
+    write_line("Enter a sentence:");
+    string sentence = read_line();
 
-    // Find index of the word "cat"
+    // Get the word to search for
+    write_line("Enter the word to search for:");
+    string word = read_line();
+
+    // Find index of the word in the sentence
     int index = index_of(sentence, word);
 
-    write_line("The index of the word 'cat' is: " + std::to_string(index));
+    // Display results based on whether the word was found or not
+    if (index != -1)
+    {
+        write_line("🔍 The word '" + word + "' starts at index: " + std::to_string(index));
+    }
+    else
+    {
+        write_line("❌ The word '" + word + "' was not found in the sentence.");
+    }
 
     return 0;
 }

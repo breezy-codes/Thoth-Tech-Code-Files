@@ -1,8 +1,12 @@
 ﻿using static SplashKitSDK.SplashKit;
 
-string sentence = "I like apple pie. Apple is great.";
+string sentence = "The robot loves apple juice. Apple is its favourite fruit.";
 
-// Replace all occurrences of "apple" with "orange"
-string modified = ReplaceAll(sentence, "apple", "orange");
+// Display the original sentence
+WriteLine("Original sentence: " + sentence);
 
+// Replace all occurrences of "apple" with "bolts"
+string modified = ReplaceAll(sentence, "apple", "bolts");
+
+// Display the modified sentence
 WriteLine("Modified sentence: " + modified);

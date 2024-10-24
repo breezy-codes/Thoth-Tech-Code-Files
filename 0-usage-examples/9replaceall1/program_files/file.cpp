@@ -2,11 +2,15 @@
 
 int main()
 {
-    string sentence = "I like apple pie. Apple is great.";
+    string sentence = "The robot loves apple juice. Apple is its favourite fruit.";
+    
+    // Display the original sentence
+    write_line("Original sentence: " + sentence);
 
-    // Replace all occurrences of "apple" with "orange"
-    string modified = replace_all(sentence, "apple", "orange");
+    // Replace all occurrences of "apple" with "bolts"
+    string modified = replace_all(sentence, "apple", "bolts");
 
+    // Display the modified sentence
     write_line("Modified sentence: " + modified);
 
     return 0;

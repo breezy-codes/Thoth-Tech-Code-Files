@@ -1,11 +1,20 @@
 ﻿using static SplashKitSDK.SplashKit;
 
-string sentence = "The cat is on the roof.";
-string word = "cat";
-WriteLine("Sentence: " + sentence);
-WriteLine("Word: " + word);
+WriteLine("Enter a sentence:");
+string sentence = ReadLine();
 
-// Find index of the word "cat"
+WriteLine("Enter the word to search for:");
+string word = ReadLine();
+
+// Find index of the word in the sentence
 int index = IndexOf(sentence, word);
 
-WriteLine("The index of the word 'cat' is: " + index);
+// Display results based on whether the word was found or not
+if (index != -1)
+{
+    WriteLine($"🔍 The word '{word}' starts at index: {index}");
+}
+else
+{
+    WriteLine($"❌ The word '{word}' was not found in the sentence.");
+}

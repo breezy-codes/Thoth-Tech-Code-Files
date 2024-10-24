@@ -41,11 +41,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/0-usage-examples/3-converttointeger1/program_files/Project/Project.csproj",
+      "projectUniqueName": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/0-usage-examples/3-converttointeger2/program_files/Project/Project.csproj",
       "projectName": "Project",
-      "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/0-usage-examples/3-converttointeger1/program_files/Project/Project.csproj",
+      "projectPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/0-usage-examples/3-converttointeger2/program_files/Project/Project.csproj",
       "packagesPath": "/home/breezy/.nuget/packages/",
-      "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/0-usage-examples/3-converttointeger1/program_files/Project/obj/",
+      "outputPath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/0-usage-examples/3-converttointeger2/program_files/Project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/breezy/.nuget/NuGet/NuGet.Config"

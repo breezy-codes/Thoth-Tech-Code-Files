@@ -1,8 +1,12 @@
 from splashkit import *
 
-sentence = "I like apple pie. Apple is great."
+sentence = "The robot loves apple juice. Apple is its favourite fruit."
 
-# Replace all occurrences of "apple" with "orange"
-modified = replace_all(sentence, "apple", "orange")
+# Display the original sentence
+write_line(f"Original sentence: {sentence}")
 
+# Replace all occurrences of "apple" with "bolts"
+modified = replace_all(sentence, "apple", "bolts")
+
+# Display the modified sentence
 write_line(f"Modified sentence: {modified}")

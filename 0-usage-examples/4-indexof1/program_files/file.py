@@ -1,11 +1,16 @@
 from splashkit import *
 
-sentence = "The cat is on the roof."
-word = "cat"
-write_line("Sentence: " + sentence)
-write_line("Word: " + word)
+write_line("Enter a sentence:")
+sentence = read_line()
 
-# Find index of the word "cat"
+write_line("Enter the word to search for:")
+word = read_line()
+
+# Find index of the word in the sentence
 index = index_of(sentence, word)
 
-write_line(f"The index of the word 'cat' is: {index}")
+# Display results based on whether the word was found or not
+if index != -1:
+    write_line(f"🔍 The word '{word}' starts at index: {index}")
+else:
+    write_line(f"❌ The word '{word}' was not found in the sentence.")

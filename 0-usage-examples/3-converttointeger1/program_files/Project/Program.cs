@@ -1,9 +1,17 @@
 ﻿using static SplashKitSDK.SplashKit;
 
-string value = "42.8";
-WriteLine("String value: " + value);
+WriteLine("Please enter a number:");
+string input = ReadLine();
 
-// Convert string to integer
-int result = ConvertToInteger(value);
+// Convert input string to integer
+int number = ConvertToInteger(input);
 
-WriteLine("The value as an integer is: " + result);
+// Check if the number is odd or even
+if (number % 2 == 0)
+{
+    WriteLine("The number is even.");
+}
+else
+{
+    WriteLine("The number is odd.");
+}
