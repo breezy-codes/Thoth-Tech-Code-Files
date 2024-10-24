@@ -1,12 +1,39 @@
-﻿using static SplashKitSDK.SplashKit;
+﻿using SplashKitSDK;
 
-WriteLine("Please enter a number:");
-string input = ReadLine();
+namespace Program
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            SplashKit.WriteLine("Welcome to the Simple Interest Calculator!");
 
-// Convert input string to double
-double number = ConvertToDouble(input);
+            // Get principal amount from the user
+            SplashKit.WriteLine("Please enter the principal amount (in dollars):");
+            string principalInput = SplashKit.ReadLine();
 
-// Calculate the square of the number
-double square = number * number;
+            // Get the interest rate from the user
+            SplashKit.WriteLine("Please enter the interest rate (as a percentage, e.g., 5 for 5%):");
+            string rateInput = SplashKit.ReadLine();
 
-WriteLine("The square of the number is: " + square);
+            // Get the time period from the user
+            SplashKit.WriteLine("Please enter the time period (in years):");
+            string timeInput = SplashKit.ReadLine();
+
+            // Convert inputs to double
+            double principal = SplashKit.ConvertToDouble(principalInput);
+            double rate = SplashKit.ConvertToDouble(rateInput);
+            double time = SplashKit.ConvertToDouble(timeInput);
+
+            // Calculate simple interest: Interest = Principal * Rate * Time / 100
+            double interest = (principal * rate * time) / 100;
+
+            // Output the result
+            SplashKit.WriteLine("Calculating interest...");
+            SplashKit.Delay(1000);
+
+            SplashKit.WriteLine($"For a principal of ${principal} at an interest rate of {rate}% over {time} years:");
+            SplashKit.WriteLine($"The simple interest is: ${interest}");
+        }
+    }
+}

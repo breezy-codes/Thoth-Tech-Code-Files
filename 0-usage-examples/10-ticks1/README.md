@@ -12,7 +12,13 @@ This is a usage example for capturing ticks and implementing delays using Splash
 
 ## Testing the C# Code
 
-![alt text](images/csharp.png)
+### OOP Version
+
+![alt text](images/csharp_oop.png)
+
+### Top Level Version
+
+![alt text](images/csharp_top.png)
 
 ## Preview of the Site
 

@@ -2,6 +2,7 @@
 
 WriteLine("Get ready to generate a random number between 1 and 100...");
 WriteLine("Drum roll please...");
+Delay(2000); // Delay for 2 seconds
 
 // Generate a random number between 1 and 100
 int randomNumber = Rnd(1, 100);

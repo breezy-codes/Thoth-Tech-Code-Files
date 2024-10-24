@@ -2,8 +2,9 @@
 
 WriteLine("Please enter a sentence:");
 string sentence = ReadLine();
+string subtext = "SplashKit";
 
-if (sentence.Contains("SplashKit"))
+if (Contains(sentence, subtext))
 {
     WriteLine("Your sentence contains the word 'SplashKit'.");
 }

@@ -1,6 +1,6 @@
-# Usage example creation for Timed Conversation
+# Usage example creation for Delayed Text Output
 
-This is a usage example for simulating a timed conversation using SplashKit in C++. The program displays a series of messages with varying delays to create an interactive dialogue effect. The PR is [here](https://github.com/thoth-tech/splashkit.io-starlight/pull/999)
+This is a fun usage example demonstrating delayed text output using SplashKit. The program prints a conversation-style text with varying delays between each message, making the interaction feel more dynamic. The PR is [here](https://github.com/thoth-tech/splashkit.io-starlight/pull/999)
 
 ## Testing Python Code
 
@@ -12,7 +12,13 @@ This is a usage example for simulating a timed conversation using SplashKit in C
 
 ## Testing the C# Code
 
-![alt text](images/csharp.png)
+### OOP Version
+
+![alt text](images/csharp_oop.png)
+
+### Top Level Version
+
+![alt text](images/csharp_top.png)
 
 ## Preview of the Site
 
