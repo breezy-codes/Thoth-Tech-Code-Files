@@ -2,6 +2,10 @@
 
 This is a fun usage example demonstrating delayed text output using SplashKit. The program prints a conversation-style text with varying delays between each message, making the interaction feel more dynamic. The PR is [here](https://github.com/thoth-tech/splashkit.io-starlight/pull/999)
 
+## Program Running
+
+![alt text](images/running.gif)
+
 ## Testing Python Code
 
 ![alt text](images/python.png)
