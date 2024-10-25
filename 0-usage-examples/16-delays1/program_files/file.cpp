@@ -1,37 +1,59 @@
 #include "splashkit.h"
 
+void write_with_delay(const string &text, int delay_time)
+{
+    string word;
+    for (char c : text)
+    {
+        if (c == ' ')
+        {
+            write(word + " ");
+            word = "";
+            delay(delay_time);
+        }
+        else
+        {
+            word += c;
+        }
+    }
+    write(word);  // Output the last word if there’s no trailing space
+}
+
 int main()
 {
-    write_line("Hello there, stranger!");
+    write_with_delay("Hello there stranger!\n", 200);
     delay(600);
 
-    write_line("Wait, did you just whisper that?");
+    write_with_delay("Oh, Hi! I didn't see you there.\n", 200);
     delay(800);
 
-    write_line("Come on, let's try that again...");
+    write_with_delay("Wait, did you just whisper that? ", 200);
+    delay(800);
+
+    write_with_delay("Come on, let's try that again... \n", 200);
     delay(1100);
 
-    write_line("HELLO THERE!");
+    write_with_delay("HELLO THERE!\n", 200);
     delay(600);
 
-    write_line("Okay, okay... I felt that!");
+    write_with_delay("Okay, okay... I felt that!", 200);
     delay(900);
 
-    write_line("But can you go even LOUDER?");
+    write_with_delay(" But can you go even LOUDER?\n", 200);
     delay(1100);
 
-    write_line("HELLOOOOOOO!");
+    write_with_delay("HELLOOOOOOO!\n", 200);
     delay(1500);
 
-    write_line("Wow! That was intense. Let's cool down a bit...");
+    write_with_delay("Wow! That was intense. Let's cool down a bit...", 200);
+    write_line("");
     delay(2100);
 
-    write_line("Why are we even shouting?");
+    write_with_delay("Why are we even shouting?\n", 200);
     delay(1100);
 
-    write_line("Oh well, it's been fun.");
+    write_with_delay("Oh well, it's been fun. ", 200);
     delay(800);
 
-    write_line("Catch you later!");
-    return 0;
+    write_with_delay(" Catch you later!", 200);
 }
