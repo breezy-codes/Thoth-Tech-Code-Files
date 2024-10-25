@@ -1,6 +1,6 @@
 # Usage example creation for Valid Integer Check
 
-This is a usage example for validating whether strings represent valid integer values using SplashKit. The program tests an array of string values and outputs whether each one can be interpreted as an integer. The PR is [here](https://github.com/thoth-tech/splashkit.io-starlight/pull/999)
+This is a usage example for validating whether strings represent valid integer values using SplashKit. The program asks the user to enter a string, and then checks if the string represents a valid integer. If the string is a valid integer, the program prints the integer value; otherwise, it prints an error message, prompting the user to enter a valid integer. The PR is [here](https://github.com/thoth-tech/splashkit.io-starlight/pull/999)
 
 ## Testing Python Code
 
