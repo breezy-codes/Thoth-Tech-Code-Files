@@ -1,6 +1,6 @@
-# Usage example creation for Convert to Double
+# Usage example creation for Square Calculation
 
-This is a usage example for converting a string to a double using SplashKit. The program takes user input for a number as a string, converts it to a double, and then displays the result. The PR is [here](https://github.com/thoth-tech/splashkit.io-starlight/pull/999)
+This is a usage example for calculating the square of a number entered by the user. The program converts the user's input from a string to a double and computes its square. The PR is [here](https://github.com/thoth-tech/splashkit.io-starlight/pull/999)
 
 ## Testing Python Code
 

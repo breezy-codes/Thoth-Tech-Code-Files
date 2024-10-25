@@ -1,0 +1,3 @@
+### Checking if a string contains a world
+
+The following code shoes example of using [contains](/api/utilities/#contains) to check if a string contains a word.
