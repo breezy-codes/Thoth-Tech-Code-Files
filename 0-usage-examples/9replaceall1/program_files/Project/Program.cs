@@ -1,12 +1,21 @@
-﻿using static SplashKitSDK.SplashKit;
+﻿using SplashKitSDK;
 
-string sentence = "The robot loves apple juice. Apple is its favourite fruit.";
+namespace Program
+{
+    public class Program
+    {
+        public static void Main()
+        {
+            string sentence = "The robot loves apple juice. Apple is its favourite fruit.";
 
-// Display the original sentence
-WriteLine("Original sentence: " + sentence);
+            // Display the original sentence
+            SplashKit.WriteLine("Original sentence: " + sentence);
 
-// Replace all occurrences of "apple" with "bolts"
-string modified = ReplaceAll(sentence, "apple", "bolts");
+            // Replace all occurrences of "apple" with "bolts"
+            string modified = SplashKit.ReplaceAll(sentence, "apple", "bolts");
 
-// Display the modified sentence
-WriteLine("Modified sentence: " + modified);
+            // Display the modified sentence
+            SplashKit.WriteLine("Modified sentence: " + modified);
+        }
+    }
+}
