@@ -2,7 +2,6 @@ from splashkit import *
 
 write_line("Let's make this more interesting!")
 
-
 # Loop until a valid range is provided
 while True:
     # Get user input for the range

@@ -16,11 +16,11 @@ int main()
     // Display results based on whether the word was found or not
     if (index != -1)
     {
-        write_line("🔍 The word '" + word + "' starts at index: " + std::to_string(index));
+        write_line("The word '" + word + "' starts at index: " + std::to_string(index));
     }
     else
     {
-        write_line("❌ The word '" + word + "' was not found in the sentence.");
+        write_line("The word '" + word + "' was not found in the sentence.");
     }
 
     return 0;

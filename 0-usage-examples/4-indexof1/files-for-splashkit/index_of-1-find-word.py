@@ -11,6 +11,6 @@ index = index_of(sentence, word)
 
 # Display results based on whether the word was found or not
 if index != -1:
-    write_line(f"🔍 The word '{word}' starts at index: {index}")
+    write_line(f"The word '{word}' starts at index: {index}")
 else:
-    write_line(f"❌ The word '{word}' was not found in the sentence.")
+    write_line(f"The word '{word}' was not found in the sentence.")
