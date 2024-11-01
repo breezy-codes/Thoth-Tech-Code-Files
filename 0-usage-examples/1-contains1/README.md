@@ -23,5 +23,3 @@ This is a usage example for checking if a string contains a specified substring 
 ## Preview of the Site
 
 ![alt text](images/running1.png)
-
-![alt text](images/running2.png)

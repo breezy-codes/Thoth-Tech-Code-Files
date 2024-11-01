@@ -23,5 +23,3 @@ This is a usage example for calculating the square of a number entered by the us
 ## Preview of the Site
 
 ![alt text](images/running1.png)
-
-![alt text](images/running2.png)

@@ -23,5 +23,3 @@ This is a usage example for searching for a word within a sentence and displayin
 ## Preview of the Site
 
 ![alt text](images/running1.png)
-
-![alt text](images/running2.png)
