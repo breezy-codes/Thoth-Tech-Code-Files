@@ -22,6 +22,4 @@ This is a usage example for validating whether strings represent valid integer v
 
 ## Preview of the Site
 
-![alt text](images/running1.png)
-
-![alt text](images/running2.png)
+![alt text](images/running.png)

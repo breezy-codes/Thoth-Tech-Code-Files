@@ -22,6 +22,4 @@ This is a usage example for determining the length of a string using SplashKit. 
 
 ## Preview of the Site
 
-![alt text](images/running1.png)
-
-![alt text](images/running2.png)
+![alt text](images/running.png)
