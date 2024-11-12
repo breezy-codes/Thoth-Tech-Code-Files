@@ -8,12 +8,3 @@ pair/logs/splashkit.log
 
 math-tut-plan.txt
 temp-usage/
-
-
-obj/
-**/obj/
-***/obj/
-****/obj/
-bin/
-**/bin/
-***/bin/

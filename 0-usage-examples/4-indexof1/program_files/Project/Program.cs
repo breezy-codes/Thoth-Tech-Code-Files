@@ -1,29 +1,20 @@
-﻿using SplashKitSDK;
+﻿using static SplashKitSDK.SplashKit;
 
-namespace Program
+WriteLine("Enter a sentence:");
+string sentence = ReadLine();
+
+WriteLine("Enter the word to search for:");
+string word = ReadLine();
+
+// Find index of the word in the sentence
+int index = IndexOf(sentence, word);
+
+// Display results based on whether the word was found or not
+if (index != -1)
 {
-    public class Program
-    {
-        public static void Main()
-        {
-            SplashKit.WriteLine("Enter a sentence:");
-            string sentence = SplashKit.ReadLine();
-
-            SplashKit.WriteLine("Enter the word to search for:");
-            string word = SplashKit.ReadLine();
-
-            // Find index of the word in the sentence
-            int index = SplashKit.IndexOf(sentence, word);
-
-            // Display results based on whether the word was found or not
-            if (index != -1)
-            {
-                SplashKit.WriteLine($"The word '{word}' starts at index: {index}");
-            }
-            else
-            {
-                SplashKit.WriteLine($"The word '{word}' was not found in the sentence.");
-            }
-        }
-    }
+    WriteLine($"The word '{word}' starts at index: {index}");
+}
+else
+{
+    WriteLine($"The word '{word}' was not found in the sentence.");
 }
