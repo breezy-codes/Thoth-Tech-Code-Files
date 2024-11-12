@@ -1,6 +1,6 @@
 # Peer Review Code Testing
 
-I did a peer review for the pull request found [here](https://github.com/thoth-tech/splashkit.io-starlight/pull/), I reviewed each program code file to ensure it met the standards and ran without errors.
+I did a peer review for the pull request found [here](https://github.com/thoth-tech/splashkit.io-starlight/pull/235), I reviewed each program code file to ensure it met the standards and ran without errors.
 
 ## Code Testing
 
