@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "H19HFpzpt7K/agkUEDnid1F6+fjxbmHZCdDeDOTSX5L+tMvzOScVyRAFeDxGywLM33jfL2jxRQcFpKWcEXnxyw==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/2_routing_with_servers/program_files/testServerCsharp/Resources/code-handling/Server.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512",
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

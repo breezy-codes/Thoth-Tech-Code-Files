@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5J9u8iYGU+ugfn1MG3rumqQjWLVl3PJVmVgITahvrF33elNHSylIKs4530rtosvmfoVPoFo5THxg5hyZ4qxK6Q==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/16_useful_util_peer_review/program_files/accept_in_as_num1/Code1.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512",
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

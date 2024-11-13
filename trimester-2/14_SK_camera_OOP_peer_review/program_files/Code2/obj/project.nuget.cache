@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "L/YRY6XcQ1a0os2Cr3pnNzhjEJT5JoCXBYW9Cf2P8+UVoBXd1Ehuua1lalI4gjRGUzq6jU0az9GeLc+TCCPkKw==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/14_SK_camera_OOP_peer_review/program_files/Code2/Code2.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512",
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

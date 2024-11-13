@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QD5NuP+gJgooke9RYQF68XrqzHIrQWzZTag3opxOWNsdJlZYE+etCsnUNLKj90Fgx0cy9mETm9izid2ZXjNsLA==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/trimester-2/17_oop_starting_with_servers/step4/Code1.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512",
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

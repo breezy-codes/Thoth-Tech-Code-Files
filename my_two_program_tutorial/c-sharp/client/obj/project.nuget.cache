@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "u10dC2FmA3c42eyriMVpOBLmX90cQa+3RQeHWMiyEDXGGmnqYBNd7FxfTV7ufxAW5cZ4BNVKI/3PKccLj5O5+Q==",
+  "success": true,
+  "projectFilePath": "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/my_two_program_tutorial/c-sharp/client/client.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/splashkit/1.2.0/splashkit.1.2.0.nupkg.sha512",
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
