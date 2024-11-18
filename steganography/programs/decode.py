@@ -2,9 +2,8 @@ from splashkit import *
 import os
 path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography"
 
-BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
-
 def base64_decode(input_string):
+    BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
     decoded_string = bytearray()
     value = 0
     bits = -8

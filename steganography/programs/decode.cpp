@@ -4,10 +4,9 @@
 
 using std::to_string;
 
-const string BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-
 string base64_decode(const string &input)
 {
+    const string BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
     string decoded_string;
     int value = 0, bits = -8;
     for (unsigned char character : input)

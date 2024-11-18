@@ -3,10 +3,9 @@
 
 using std::to_string;
 
-string BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
-
 string base64_encode(const string &input)
 {
+    string BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
     string encoded_string;
     int value = 0, bits = -6;
     const unsigned int base64_mask = 0x3F;
