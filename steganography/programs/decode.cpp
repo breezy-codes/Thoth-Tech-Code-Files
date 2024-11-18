@@ -1,13 +1,10 @@
-#include <iostream>
 #include <fstream>
 #include <vector>
-#include <string>
-#include <bitset>
 #include "splashkit.h"
 
 using std::to_string;
 
-const std::string BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+const string BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
 string base64_decode(const string &input)
 {
@@ -34,24 +31,29 @@ string base64_decode(const string &input)
     return decoded_string;
 }
 
-std::string extract_message(const std::vector<char>& data, int offset) {
-    std::string length_bits;
+string extract_message(const vector<char>& data, int offset) {
+    // Extract the length of the base64 encoded message
+    int base64_length = 0;
     for (int i = 0; i < 32; ++i) {
-        length_bits += std::to_string(data[offset + i] & 1);
+        base64_length = (base64_length << 1) | (data[offset + i] & 1);
     }
+    write_line("Extracted Base64 length (in characters): " + to_string(base64_length));
 
-    int base64_length = std::bitset<32>(length_bits).to_ulong();
-    std::cout << "Extracted Base64 length (in characters): " << base64_length << std::endl;
-
-    std::string binary_message;
+    // Extract the binary message
+    string binary_message;
     for (int i = 0; i < base64_length * 8; ++i) {
-        binary_message += std::to_string(data[offset + 32 + i] & 1);
+        binary_message += to_string(data[offset + 32 + i] & 1);
     }
 
-    std::string base64_message;
+    // Convert binary message to base64 string
+    string base64_message;
     for (size_t i = 0; i < binary_message.length(); i += 8) {
         if (i + 8 <= binary_message.length()) {
-            base64_message += static_cast<char>(std::bitset<8>(binary_message.substr(i, 8)).to_ulong());
+            char character = 0;
+            for (int j = 0; j < 8; ++j) {
+                character = (character << 1) | (binary_message[i + j] - '0');
+            }
+            base64_message += character;
         }
     }
 
@@ -59,18 +61,20 @@ std::string extract_message(const std::vector<char>& data, int offset) {
 }
 
 int main() {
-    std::string path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography";
-    std::string encoded_file_path = path + "/encoded.bmp";
+    string path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography";
+    string encoded_file_path = path + "/encoded.bmp";
     
-    std::ifstream input_file(encoded_file_path, std::ios::binary);
-    std::vector<char> data((std::istreambuf_iterator<char>(input_file)), std::istreambuf_iterator<char>());
+    std::ifstream input_file(encoded_file_path);
+    vector<char> data;
+    char ch;
+    while (input_file.get(ch)) {
+        data.push_back(ch);
+    }
     input_file.close();
 
     int pixel_data_offset = *reinterpret_cast<int*>(&data[10]);
-    std::cout << "Pixel data offset: " << pixel_data_offset << std::endl;
+    write_line("Pixel data offset: " + to_string(pixel_data_offset));
 
-    std::string hidden_message = extract_message(data, pixel_data_offset);
-    std::cout << "Extracted message: " << hidden_message << std::endl;
-
-    return 0;
+    string hidden_message = extract_message(data, pixel_data_offset);
+    write_line("Extracted message: " + hidden_message);
 }

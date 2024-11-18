@@ -1,8 +1,4 @@
-#include <iostream>
-#include <fstream>
 #include <vector>
-#include <string>
-#include <bitset>
 #include "splashkit.h"
 
 using std::to_string;
@@ -47,10 +43,16 @@ vector<char> embed_message(const vector<char>& data, const string& message, int 
 
     string binary_message;
     for (char ch : base64_message) {
-        binary_message += std::bitset<8>(ch).to_string();
+        for (int i = 7; i >= 0; --i) {
+            binary_message += ((ch >> i) & 1) ? '1' : '0';
+        }
     }
 
-    string length_bits = std::bitset<32>(base64_message.length()).to_string();
+    string length_bits;
+    int length = base64_message.length();
+    for (int i = 31; i >= 0; --i) {
+        length_bits += ((length >> i) & 1) ? '1' : '0';
+    }
 
     vector<char> modified_data = data;
     size_t i = 0;
@@ -62,25 +64,39 @@ vector<char> embed_message(const vector<char>& data, const string& message, int 
     return modified_data;
 }
 
+void save_to_file(const vector<char>& data, const string& file_path) {
+    FILE *output_file = fopen(file_path.c_str(), "wb");
+    fwrite(data.data(), 1, data.size(), output_file);
+    fclose(output_file);
+}
+
 int main() {
     string path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography";
     string input_file_path = path + "/image.bmp";
     string output_file_path = path + "/encoded.bmp";
     
-    std::ifstream input_file(input_file_path, std::ios::binary);
-    std::vector<char> data((std::istreambuf_iterator<char>(input_file)), std::istreambuf_iterator<char>());
-    input_file.close();
+    FILE *input_file = fopen(input_file_path.c_str(), "rb");
+    if (!input_file) {
+        write_line("Error opening input file.");
+        return 1;
+    }
+
+    fseek(input_file, 0, SEEK_END);
+    size_t file_size = ftell(input_file);
+    fseek(input_file, 0, SEEK_SET);
+
+    vector<char> data(file_size);
+    fread(data.data(), 1, file_size, input_file);
+    fclose(input_file);
 
     write("Enter the message to embed: ");
     string message_to_embed = read_line();
 
     int pixel_data_offset = *reinterpret_cast<int*>(&data[10]);
 
-    std::vector<char> encoded_data = embed_message(data, message_to_embed, pixel_data_offset);
+    vector<char> encoded_data = embed_message(data, message_to_embed, pixel_data_offset);
 
-    std::ofstream output_file(output_file_path, std::ios::binary);
-    output_file.write(encoded_data.data(), encoded_data.size());
-    output_file.close();
+    save_to_file(encoded_data, output_file_path);
 
     write_line("Message embedded successfully in Base64! Encoded image saved as " + output_file_path + ".");
 
