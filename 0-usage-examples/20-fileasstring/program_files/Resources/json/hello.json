@@ -1,0 +1,23 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Ravona",
+            "email": "ravona@example.com"
+        },
+        {
+            "id": 2,
+            "name": "Taylor",
+            "email": "taylor@example.com"
+        },
+        {
+            "id": 3,
+            "name": "Alex",
+            "email": "alex@example.com"
+        }
+    ],
+    "app_info": {
+        "version": "1.0.0",
+        "description": "A simple SplashKit JSON example."
+    }
+}

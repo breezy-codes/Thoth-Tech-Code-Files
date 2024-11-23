@@ -14,7 +14,7 @@ delay(600)
 write_with_delay("Oh, Hi! I didn't see you there.\n", 200)
 delay(800)
 
-write_with_delay("Wait, did you just whisper that?", 200)
+write_with_delay("Wait, did you just whisper that?\n", 200)
 delay(800)
 
 write_with_delay("Come on, let's try that again...\n", 200)
@@ -32,7 +32,7 @@ delay(1100)
 write_with_delay("HELLOOOOOOO!\n", 200)
 delay(1500)
 
-write_with_delay("Wow! That was intense. Let's cool down a bit...", 200)
+write_with_delay("Wow! That was intense. Let's cool down a bit...\n", 200)
 delay(2100)
 
 write_with_delay("Why are we even shouting?\n", 200)
