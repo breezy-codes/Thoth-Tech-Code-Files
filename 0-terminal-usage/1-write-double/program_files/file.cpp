@@ -2,13 +2,17 @@
 
 int main()
 {
-    write_line("Countdown with Decimals:");
-    for (double i = 5.0; i >= 0.0; i -= 0.5)
+    double pi = 3.14159265358979323846;
+    write_line("Circle Area Calculator (Double Version):");
+
+    for (double radius = 1.0; radius <= 10.0; radius += 1.0)
     {
-        write("T-minus ");
-        write(i);
-        write_line(" seconds!");
+        write("Radius: ");
+        write(radius); // Writing a double
+        write(", Area: ");
+        write(pi * radius * radius); // Writing the calculated area as a double
+        write_line("");
     }
-    write_line("Blast off!");
+
     return 0;
 }
