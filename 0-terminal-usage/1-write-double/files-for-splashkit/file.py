@@ -1,7 +1,7 @@
 from splashkit import *
 
 pi = 3.14159265358979323846
-write_line("Circle Area Calculator (Double Version):")
+write_line("Circle Area Calculator:")
 
 radius = 1.0
 while radius <= 10.0:
