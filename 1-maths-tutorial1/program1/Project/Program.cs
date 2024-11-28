@@ -2,20 +2,35 @@
 using static SplashKitSDK.SplashKit;
 
 // Calculate the square root of a number
-double Sqrt(int n)
+double Sqrt(double x)
 {
-    if (n == 0 || n == 1)
-        return n;
+    double y = 0.0;
+    int p = 0;
+    int c = 0;
 
-    double estimate = n;
-    double precision = 0.00001;
-
-    while ((estimate - n / estimate) > precision)
+    // Find the first perfect square greater than the input number
+    while (true)
     {
-        estimate = (estimate + n / estimate) / 2.0;
+        p++;
+        int square = (p + 1) * (p + 1); // Calculate the next perfect square
+        if (x <= square) // Stop when x is less than or equal to the square
+            break;
     }
 
-    return estimate;
+    // Approximate the square root using the Newton-Raphson method
+    y = (double)p;
+    c = 0;
+    while (c < 10) // Perform a maximum of 10 iterations
+    {
+        y = (x / y + y) / 2; // Update the guess by averaging x/y and y
+
+        if (y * y == x) // Check if the square of the current guess matches the input
+            return y; // If exact, return the square root
+
+        c++;
+    }
+
+    return y;
 }
 
 // Check if a number is prime
@@ -59,3 +74,6 @@ else
 {
     WriteLine(number + " is not a prime number.");
 }
+
+// print the square root of the number
+WriteLine($"The square root of {number} is {Sqrt(number)}");
