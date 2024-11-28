@@ -1,27 +1,26 @@
 from splashkit import *
 
-def calculate_square_root(x):
-    # Find the first perfect square greater than the input number
-    p = 0
-    while True:
-        p += 1
-        square = (p + 1) * (p + 1)  # Calculate the next perfect square
-        if x <= square:  # Stop when x is less than or equal to the square
-            break
+def caesar_cipher_encrypt(plaintext, shift):
+    ciphertext = ""
+    for c in plaintext:
+        if c.isalpha():
+            if c.islower():
+                ciphertext += chr((ord(c) - ord('a') + shift) % 26 + ord('a'))
+            else:
+                ciphertext += chr((ord(c) - ord('A') + shift) % 26 + ord('A'))
+        else:
+            ciphertext += c
+    return ciphertext
 
-    # Approximate the square root using the Newton-Raphson method
-    y = float(p)
-    c = 0
-    while c < 10:  # Perform a maximum of 10 iterations
-        y = (x / y + y) / 2  # Update the guess by averaging x/y and y
+def caesar_cipher_decode(ciphertext, shift):
+    return caesar_cipher_encrypt(ciphertext, -shift)
 
-        if y * y == x:  # Check if the square of the current guess matches the input
-            return y  # If exact, return the square root
+def caesar_cipher_brute_force(input_string):
+    for shift in range(26):
+        write_line(f"Shift {shift} => {caesar_cipher_decode(input_string, shift)}")
 
-        c += 1
 
-    # Return the approximated square root after all iterations
-    return y
+write_line("Enter the encrypted message: ")
+ciphertext = read_line()
 
-result = calculate_square_root(23)
-write_line(f"The square root of 25 is: {result}")
+caesar_cipher_brute_force(cphertext)
