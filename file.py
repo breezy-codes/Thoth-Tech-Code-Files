@@ -1,26 +1,39 @@
 from splashkit import *
 
-def caesar_cipher_encrypt(plaintext, shift):
-    ciphertext = ""
-    for c in plaintext:
-        if c.isalpha():
-            if c.islower():
-                ciphertext += chr((ord(c) - ord('a') + shift) % 26 + ord('a'))
+def from_hex(hex):
+    if '0' <= hex <= '9':
+        return ord(hex) - ord('0')
+    if 'A' <= hex <= 'F':
+        return ord(hex) - ord('A') + 10
+    if 'a' <= hex <= 'f':
+        return ord(hex) - ord('a') + 10
+    return -1  # Invalid hex character
+
+def url_decode(input_string):
+    decoded_string = ""
+    i = 0
+    while i < len(input_string):
+        if input_string[i] == '%':
+            if i + 2 < len(input_string):
+                hex1 = input_string[i + 1]
+                hex2 = input_string[i + 2]
+                decoded_char = (from_hex(hex1) << 4) | from_hex(hex2)
+                if decoded_char >= 0:
+                    decoded_string += chr(decoded_char)
+                    i += 2
+                else:
+                    decoded_string += '%'
             else:
-                ciphertext += chr((ord(c) - ord('A') + shift) % 26 + ord('A'))
+                decoded_string += '%'
+        elif input_string[i] == '+':
+            decoded_string += ' '
         else:
-            ciphertext += c
-    return ciphertext
+            decoded_string += input_string[i]
+        i += 1
+    return decoded_string
 
-def caesar_cipher_decode(ciphertext, shift):
-    return caesar_cipher_encrypt(ciphertext, -shift)
-
-def caesar_cipher_brute_force(input_string):
-    for shift in range(26):
-        write_line(f"Shift {shift} => {caesar_cipher_decode(input_string, shift)}")
-
-
-write_line("Enter the encrypted message: ")
-ciphertext = read_line()
-
-caesar_cipher_brute_force(cphertext)
+def main():
+    input_string = "https%3A%2F%2Fwww.example.com%2Fsearch%3Fq%3Dhello%20world"
+    print(url_decode(input_string))
+    
+main()

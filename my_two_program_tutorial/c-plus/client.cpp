@@ -10,13 +10,18 @@ void start_client(const string& name, const string& host = "127.0.0.1", int port
         // Get user input
         write("Enter message to send (or 'exit' to quit): ");
         string message = read_line();
-        if (message == "exit") {
-            break;
-        }
-        // Send data to the server
+
+        // Send the message to the server
         write_line("Sending message: " + message);
         send_message_to(message, client);
-        
+
+        // Check if the message is "exit"
+        if (message == "exit") {
+            send_message_to(message, client);
+            write_line("Exit message sent. Closing client...");
+            break; // Exit the loop
+        }
+
         // Check for new network activity and wait for the server response
         while (true) {
             check_network_activity();

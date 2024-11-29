@@ -1,40 +1,61 @@
 #include "splashkit.h"
 using std::to_string;
 
-string ceaser_cipher_encode(const string &input, int shift)
+int from_hex(char hex)
 {
-    string encoded_string;
-    for (char character : input)
+    if (hex >= '0' && hex <= '9') return hex - '0';
+    if (hex >= 'A' && hex <= 'F') return hex - 'A' + 10;
+    if (hex >= 'a' && hex <= 'f') return hex - 'a' + 10;
+    return -1; // Invalid hex character
+}
+
+// Function to decode a URL-encoded string
+string url_decode(const string &input)
+{
+    string decoded_string;
+    for (size_t i = 0; i < input.length(); ++i)
     {
-        if (isalpha(character))
+        if (input[i] == '%')
         {
-            char base = islower(character) ? 'a' : 'A';
-            encoded_string += (character - base + shift) % 26 + base;
+            if (i + 2 < input.length())
+            {
+                char hex1 = input[i + 1];
+                char hex2 = input[i + 2];
+                int decoded_char = (from_hex(hex1) << 4) | from_hex(hex2);
+                if (decoded_char >= 0) // Only append if valid hex
+                {
+                    decoded_string += static_cast<char>(decoded_char);
+                    i += 2; // Skip the two hex characters
+                }
+                else
+                {
+                    // Handle invalid hex gracefully (optional)
+                    decoded_string += '%';
+                }
+            }
+            else
+            {
+                // Handle incomplete encoding gracefully
+                decoded_string += '%';
+            }
+        }
+        else if (input[i] == '+')
+        {
+            decoded_string += ' '; // '+' is interpreted as space in URL encoding
         }
         else
         {
-            encoded_string += character; // Non-alphabet characters remain unchanged
+            decoded_string += input[i];
         }
     }
-    return encoded_string;
-}
-
-string ceaser_cipher_decode(const string &input, int shift)
-{
-    return ceaser_cipher_encode(input, 26 - (shift % 26)); // Reverse the shift
-}
-
-void ceaser_cipher_brute_force(const string &input)
-{
-    for (int shift = 0; shift < 26; shift++)
-    {
-        write_line("Shift " + to_string(shift) + "=> " + ceaser_cipher_decode(input, shift));
-    }
+    return decoded_string;
 }
 
 int main()
 {
-    write_line("Enter the encoded message: ");
-    string encoded_message = read_line();
-    ceaser_cipher_brute_force(encoded_message);
+    string encoded_url = "https%3A%2F%2Fwww.example.com%2Fsearch%3Fq%3Dhello%20world";
+    string decoded_url = url_decode(encoded_url);
+    write_line("Decoded URL: " + decoded_url);
+
+    return 0;
 }

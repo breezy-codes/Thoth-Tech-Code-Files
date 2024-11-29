@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Refresh-Screen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ea1b18915b30216ebedc52ac9257e8448fe8bdc3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d438985545304bcd5dd6a5cd43297e84130410a1")]
 [assembly: System.Reflection.AssemblyProductAttribute("Refresh-Screen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Refresh-Screen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,22 @@
 #include "splashkit.h"
 using std::to_string;
 
+bool button(const string& text, const rectangle& rect)
+{
+    // Draw the button
+    fill_rectangle(COLOR_BLUE, rect);
+    draw_text(text, COLOR_BLACK, "default_font", 12, rect.x + 10, rect.y + 15);
+
+    // Check if the mouse is clicked inside the rectangle
+    if (mouse_clicked(LEFT_BUTTON) && 
+        mouse_x() >= rect.x && mouse_x() <= rect.x + rect.width &&
+        mouse_y() >= rect.y && mouse_y() <= rect.y + rect.height)
+    {
+        return true; // Button clicked
+    }
+    return false; // Button not clicked
+}
+
 void start_server(const string& name, int port) {
     server_socket server = nullptr;
     bool server_running = true;  // Control flag for the server
@@ -22,7 +38,6 @@ void start_server(const string& name, int port) {
             server_running = false;
             break;  // Exit the loop to stop the server
         }
-        draw_interface();
         refresh_screen();
 
         // Check for new connections and network activity
@@ -37,11 +52,17 @@ void start_server(const string& name, int port) {
                 // Read message data from the connection
                 if (has_messages(client_connection)) {
                     string data = read_message_data(client_connection);
-                    write_line("Message read attempt...");
                     if (data.empty()) {
                         break;
                     }
                     write_line("Received from client: " + data);
+
+                    // Check if the message is "exit"
+                    if (data == "exit") {
+                        write_line("Exit message received. Closing the server.");
+                        server_running = false;
+                        break;
+                    }
 
                     // Send confirmation back to the client
                     string confirmation_message = "Server received the message: " + data;
@@ -53,6 +74,11 @@ void start_server(const string& name, int port) {
 
             // Client disconnected
             write_line("Client " + to_string(client_ip) + " disconnected.");
+        }
+
+        // Stop the server loop if "exit" was received
+        if (!server_running) {
+            break;
         }
     }
 
