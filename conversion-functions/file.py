@@ -162,47 +162,44 @@ def base64_decode(input_string):
     
     return decoded_string.decode()
 
-def write_line(message):
-    print(message)
-
 def main():
     # Test binary functions
-    write_line("Testing Binary Functions:")
+    print("Testing Binary Functions:")
     bin = "1010"
-    write_line("Binary to Decimal (" + bin + "): " + str(bin_to_dec(bin)))
+    print("Binary to Decimal (" + bin + "): " + str(bin_to_dec(bin)))
     dec = 10
-    write_line("Decimal to Binary (" + str(dec) + "): " + dec_to_bin(dec))
+    print("Decimal to Binary (" + str(dec) + "): " + dec_to_bin(dec))
 
     # Test hexadecimal functions
-    write_line("\nTesting Hexadecimal Functions:")
+    print("\nTesting Hexadecimal Functions:")
     hex = "A"
-    write_line("Hex to Binary (" + hex + "): " + hex_to_bin(hex))
+    print("Hex to Binary (" + hex + "): " + hex_to_bin(hex))
     bin_from_hex = "1010"
-    write_line("Binary to Hex (" + bin_from_hex + "): " + bin_to_hex(bin_from_hex))
+    print("Binary to Hex (" + bin_from_hex + "): " + bin_to_hex(bin_from_hex))
 
     # Test octal functions
-    write_line("\nTesting Octal Functions:")
+    print("\nTesting Octal Functions:")
     oct = "12"
-    write_line("Octal to Decimal (" + oct + "): " + str(oct_to_dec(oct)))
-    write_line("Decimal to Octal (" + str(dec) + "): " + dec_to_oct(dec))
-    write_line("Octal to Binary (" + oct + "): " + oct_to_bin(oct))
-    write_line("Binary to Octal (" + bin + "): " + bin_to_oct(bin))
-    write_line("Hex to Octal (" + hex + "): " + hex_to_oct(hex))
-    write_line("Octal to Hex (" + oct + "): " + oct_to_hex(oct))
+    print("Octal to Decimal (" + oct + "): " + str(oct_to_dec(oct)))
+    print("Decimal to Octal (" + str(dec) + "): " + dec_to_oct(dec))
+    print("Octal to Binary (" + oct + "): " + oct_to_bin(oct))
+    print("Binary to Octal (" + bin + "): " + bin_to_oct(bin))
+    print("Hex to Octal (" + hex + "): " + hex_to_oct(hex))
+    print("Octal to Hex (" + oct + "): " + oct_to_hex(oct))
 
     # Test Base64 functions
-    write_line("\nTesting Base64 Functions:")
+    print("\nTesting Base64 Functions:")
     plain_text = "Hello"
     encoded = base64_encode(plain_text)
-    write_line("Base64 Encode (" + plain_text + "): " + encoded)
+    print("Base64 Encode (" + plain_text + "): " + encoded)
     decoded = base64_decode(encoded)
-    write_line("Base64 Decode (" + encoded + "): " + decoded)
+    print("Base64 Decode (" + encoded + "): " + decoded)
 
     # Validation functions
-    write_line("\nTesting Validation Functions:")
-    write_line("Is Binary (" + bin + "): " + ("True" if is_binary(bin) else "False"))
-    write_line("Is Hex (" + hex + "): " + ("True" if is_hex(hex) else "False"))
-    write_line("Is Octal (" + oct + "): " + ("True" if is_octal(oct) else "False"))
+    print("\nTesting Validation Functions:")
+    print("Is Binary (" + bin + "): " + ("True" if is_binary(bin) else "False"))
+    print("Is Hex (" + hex + "): " + ("True" if is_hex(hex) else "False"))
+    print("Is Octal (" + oct + "): " + ("True" if is_octal(oct) else "False"))
 
 if __name__ == "__main__":
     main()

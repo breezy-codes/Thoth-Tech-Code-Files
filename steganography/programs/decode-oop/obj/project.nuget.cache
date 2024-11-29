@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1gsjk4IxmukSgn1p+vdsk7p9vWTFJdnMCIOHF29Nd98z/t38efdNdum6+asW5aYrBS7dy+VTyszt3LDnCdv3fQ==",
+  "dgSpecHash": "kE5tjNmAGq6wtdV/8kO1NDaTWdzdO3pGjhkvLEX8M8BzqU2FkzlHOpXgoQaCmN7RRwNb7w6Dmhd5C2PXbKRo6w==",
   "success": true,
-  "projectFilePath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/decode.csproj",
+  "projectFilePath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode-oop/decode.csproj",
   "expectedPackageFiles": [
     "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
   ],
