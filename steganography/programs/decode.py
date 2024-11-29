@@ -1,4 +1,3 @@
-from splashkit import *
 import os
 path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography"
 
@@ -26,9 +25,9 @@ def base64_decode(input_string):
 def extract_message(data, offset):
     # Extract the length of the Base64 message (first 32 bits)
     length_bits = ''.join(str(data[offset + i] & 1) for i in range(32))
-    write_line(f"Length bits: {length_bits}")
+    print(f"Length bits: {length_bits}")
     base64_length = int(length_bits, 2)
-    write_line(f"Extracted Base64 length (in characters): {base64_length}")
+    print(f"Extracted Base64 length (in characters): {base64_length}")
 
     # Extract the Base64 message
     binary_message = ''.join(str(data[offset + 32 + i] & 1) for i in range(base64_length * 8))
@@ -44,4 +43,4 @@ with open(encoded_file_path, "rb") as f: data = f.read()
 pixel_data_offset = int.from_bytes(data[10:14], byteorder='little')
 
 hidden_message = extract_message(data, pixel_data_offset)
-write_line(f"Extracted message: {hidden_message}")
+print(f"Extracted message: {hidden_message}")

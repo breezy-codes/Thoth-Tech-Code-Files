@@ -1,0 +1,15 @@
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/bin/Debug/net8.0/decode
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/bin/Debug/net8.0/decode.deps.json
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/bin/Debug/net8.0/decode.runtimeconfig.json
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/bin/Debug/net8.0/decode.dll
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/bin/Debug/net8.0/decode.pdb
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/obj/Debug/net8.0/decode.GeneratedMSBuildEditorConfig.editorconfig
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/obj/Debug/net8.0/decode.AssemblyInfoInputs.cache
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/obj/Debug/net8.0/decode.AssemblyInfo.cs
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/obj/Debug/net8.0/decode.csproj.CoreCompileInputs.cache
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/obj/Debug/net8.0/decode.sourcelink.json
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/obj/Debug/net8.0/decode.dll
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/obj/Debug/net8.0/refint/decode.dll
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/obj/Debug/net8.0/decode.pdb
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/obj/Debug/net8.0/decode.genruntimeconfig.cache
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/decode/obj/Debug/net8.0/ref/decode.dll

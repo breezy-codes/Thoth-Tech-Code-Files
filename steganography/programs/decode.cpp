@@ -1,8 +1,9 @@
 #include <fstream>
 #include <vector>
-#include "splashkit.h"
+#include <iostream>
+#include <string>
 
-using std::to_string;
+using namespace std;
 
 string base64_decode(const string &input)
 {
@@ -36,7 +37,7 @@ string extract_message(const vector<char>& data, int offset) {
     for (int i = 0; i < 32; ++i) {
         base64_length = (base64_length << 1) | (data[offset + i] & 1);
     }
-    write_line("Extracted Base64 length (in characters): " + to_string(base64_length));
+    std::cout << "Extracted Base64 length (in characters): " << base64_length << std::endl;
 
     // Extract the binary message
     string binary_message;
@@ -59,11 +60,12 @@ string extract_message(const vector<char>& data, int offset) {
     return base64_decode(base64_message);
 }
 
-int main() {
+int main()
+{
     string path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography";
     string encoded_file_path = path + "/encoded.bmp";
     
-    std::ifstream input_file(encoded_file_path);
+    std::ifstream input_file(encoded_file_path, std::ios::binary);
     vector<char> data;
     char ch;
     while (input_file.get(ch)) {
@@ -72,8 +74,10 @@ int main() {
     input_file.close();
 
     int pixel_data_offset = *reinterpret_cast<int*>(&data[10]);
-    write_line("Pixel data offset: " + to_string(pixel_data_offset));
+    std::cout << "Pixel data offset: " << pixel_data_offset << std::endl;
 
     string hidden_message = extract_message(data, pixel_data_offset);
-    write_line("Extracted message: " + hidden_message);
+    std::cout << "Extracted message: " << hidden_message << std::endl;
+
+    return 0;
 }

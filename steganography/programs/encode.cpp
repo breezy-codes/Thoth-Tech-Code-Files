@@ -1,7 +1,7 @@
 #include <vector>
-#include "splashkit.h"
+#include <iostream>
 
-using std::to_string;
+using namespace std;
 
 string base64_encode(const string &input)
 {
@@ -37,8 +37,8 @@ string base64_encode(const string &input)
 
 vector<char> embed_message(const vector<char>& data, const string& message, int offset) {
     string base64_message = base64_encode(message);
-    write_line("Base64-encoded message: " + base64_message);
-    write_line("Base64 length (in characters): " + to_string(base64_message.length()));
+    std::cout << "Base64-encoded message: " << base64_message << std::endl;
+    std::cout << "Base64 length (in characters): " << base64_message.length() << std::endl;
 
     string binary_message;
     for (char ch : base64_message) {
@@ -69,14 +69,15 @@ void save_to_file(const vector<char>& data, const string& file_path) {
     fclose(output_file);
 }
 
-int main() {
+int main()
+{
     string path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography";
     string input_file_path = path + "/image.bmp";
     string output_file_path = path + "/encoded.bmp";
     
     FILE *input_file = fopen(input_file_path.c_str(), "rb");
     if (!input_file) {
-        write_line("Error opening input file.");
+        cout << "Error opening input file." << endl;
         return 1;
     }
 
@@ -88,8 +89,9 @@ int main() {
     fread(data.data(), 1, file_size, input_file);
     fclose(input_file);
 
-    write("Enter the message to embed: ");
-    string message_to_embed = read_line();
+    cout << "Enter the message to embed: ";
+    string message_to_embed;
+    getline(cin, message_to_embed);
 
     int pixel_data_offset = *reinterpret_cast<int*>(&data[10]);
 
@@ -97,7 +99,7 @@ int main() {
 
     save_to_file(encoded_data, output_file_path);
 
-    write_line("Message embedded successfully in Base64! Encoded image saved as " + output_file_path + ".");
+    cout << "Message embedded successfully in Base64! Encoded image saved as " << output_file_path << "." << endl;
 
     return 0;
 }

@@ -1,4 +1,3 @@
-from splashkit import *
 import os
 path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography"
 
@@ -28,14 +27,14 @@ def base64_encode(input_string):
 def embed_message(data, message, offset):
     # Encode the message using Base64
     base64_message = base64_encode(message)
-    write_line(f"Base64-encoded message: {base64_message}")
-    write_line(f"Base64 length (in characters): {len(base64_message)}")
+    print(f"Base64-encoded message: {base64_message}")
+    print(f"Base64 length (in characters): {len(base64_message)}")
 
     binary_message = ''.join(format(ord(char), '08b') for char in base64_message)
 
     # Embed the length of the Base64 message (in bytes) in the first 32 bits
     length_bits = format(len(base64_message), '032b')
-    write_line(f"Length bits: {length_bits}")
+    print(f"Length bits: {length_bits}")
 
     data = bytearray(data)
     for i, bit in enumerate(length_bits + binary_message):
@@ -47,12 +46,12 @@ input_file_path = os.path.join(path, "image.bmp")
 output_file_path = os.path.join(path, "encoded.bmp")
 with open(input_file_path, "rb") as f:data = f.read()
 
-write_line("Enter the message to embed: ")
-message_to_embed = read_line()
+print("Enter the message to embed: ")
+message_to_embed = input()
 
 # Specify the offset where the pixel data starts (e.g., 54 for standard BMP)
 pixel_data_offset = int.from_bytes(data[10:14], byteorder='little')
 
 encoded_data = embed_message(data, message_to_embed, pixel_data_offset)
 with open(output_file_path, "wb") as f: f.write(encoded_data)
-write_line(f"Message embedded successfully in Base64! Encoded image saved as {output_file_path}.")
+print(f"Message embedded successfully in Base64! Encoded image saved as {output_file_path}.")
