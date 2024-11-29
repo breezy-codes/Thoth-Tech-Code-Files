@@ -1,5 +1,8 @@
-#include <vector>
 #include <iostream>
+#include <vector>
+#include <string>
+#include <bitset>
+#include <sstream>
 
 using namespace std;
 
@@ -36,29 +39,58 @@ string base64_encode(const string &input)
 }
 
 vector<char> embed_message(const vector<char>& data, const string& message, int offset) {
+    // Encode the message using Base64
     string base64_message = base64_encode(message);
-    std::cout << "Base64-encoded message: " << base64_message << std::endl;
-    std::cout << "Base64 length (in characters): " << base64_message.length() << std::endl;
+    cout << "Base64-encoded message: " << base64_message << endl;
+    cout << "Base64 length (in characters): " << base64_message.length() << endl;
 
+    // Convert the Base64 message to binary
     string binary_message;
     for (char ch : base64_message) {
-        for (int i = 7; i >= 0; --i) {
-            binary_message += ((ch >> i) & 1) ? '1' : '0';
-        }
+        binary_message += bitset<8>(ch).to_string();
     }
+    cout << "Binary message: " << binary_message << endl;
 
-    string length_bits;
+    // Embed the length of the Base64 message (in bytes) in the first 32 bits
     int length = base64_message.length();
-    for (int i = 31; i >= 0; --i) {
-        length_bits += ((length >> i) & 1) ? '1' : '0';
+    string length_bits = bitset<32>(length).to_string();
+    cout << "Length bits: " << length_bits << endl;
+
+    // Create a modifiable copy of the data
+    vector<char> modified_data = data;
+
+    // Extract original binary data at embedding positions
+    string original_binary;
+    for (size_t i = 0; i < length_bits.size() + binary_message.size(); ++i) {
+        original_binary += bitset<8>(modified_data[offset + i]).to_string();
     }
 
-    vector<char> modified_data = data;
-    size_t i = 0;
+    // Embed the message into the least significant bits
+    size_t index = 0;
     for (const char& bit : length_bits + binary_message) {
-        modified_data[offset + i] = (modified_data[offset + i] & 0xFE) | (bit - '0');
-        i++;
+        modified_data[offset + index] = (modified_data[offset + index] & 0xFE) | (bit - '0');
+        index++;
     }
+
+    // Extract modified binary data at embedding positions
+    string modified_binary;
+    for (size_t i = 0; i < length_bits.size() + binary_message.size(); ++i) {
+        modified_binary += bitset<8>(modified_data[offset + i]).to_string();
+    }
+
+    // Truncate for readability
+    auto truncate_binary = [](const string& binary_str, size_t show_bits = 64) {
+        if (binary_str.length() > show_bits * 2) {
+            return binary_str.substr(0, show_bits) + "..." + binary_str.substr(binary_str.length() - show_bits);
+        }
+        return binary_str;
+    };
+
+    cout << "\nOriginal binary data at embedding positions (truncated):" << endl;
+    cout << truncate_binary(original_binary) << endl;
+
+    cout << "\nModified binary data at embedding positions (truncated):" << endl;
+    cout << truncate_binary(modified_binary) << endl;
 
     return modified_data;
 }

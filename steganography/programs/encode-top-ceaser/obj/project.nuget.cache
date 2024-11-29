@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0ou/+JhWLqTa0HqtpKat99cehemw98KufAwx3y9X1l4nxqBd3MHAnloZvtjriQMBtwgTkHqnCfR3/P1zItctTQ==",
+  "success": true,
+  "projectFilePath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode-top-ceaser/encode-top.csproj",
+  "expectedPackageFiles": [
+    "/home/breezy/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

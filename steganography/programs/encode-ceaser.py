@@ -45,17 +45,40 @@ def embed_message(data, message, offset, shift):
     print(f"Base64-encoded message: {base64_message}")
     print(f"Base64 length (in characters): {len(base64_message)}")
 
+    # Convert the Base64 message to binary
     binary_message = ''.join(format(ord(char), '08b') for char in base64_message)
+    print(f"Binary message: {binary_message}")
 
     # Embed the length of the Base64 message (in bytes) in the first 32 bits
     length_bits = format(len(base64_message), '032b')
     print(f"Length bits: {length_bits}")
 
     data = bytearray(data)
-    for i, bit in enumerate(length_bits + binary_message):
-        data[offset + i] = (data[offset + i] & 0xFE) | int(bit)
 
-    return data
+    # Extract original binary at embedding positions
+    original_binary = "".join(format(data[offset + i], '08b') for i in range(len(length_bits + binary_message)))
+    modified_data = bytearray(data)
+
+    # Embed the message into the least significant bits
+    for i, bit in enumerate(length_bits + binary_message):
+        modified_data[offset + i] = (modified_data[offset + i] & 0xFE) | int(bit)
+
+    # Extract modified binary at embedding positions
+    modified_binary = "".join(format(modified_data[offset + i], '08b') for i in range(len(length_bits + binary_message)))
+
+    # Truncate for readability
+    def truncate_binary(binary_str, show_bits=64):
+        if len(binary_str) > show_bits * 2:
+            return binary_str[:show_bits] + "..." + binary_str[-show_bits:]
+        return binary_str
+
+    print("\nOriginal binary data at embedding positions (truncated):")
+    print(truncate_binary(original_binary))
+
+    print("\nModified binary data at embedding positions (truncated):")
+    print(truncate_binary(modified_binary))
+
+    return modified_data
 
 input_file_path = os.path.join(path, "cat.bmp")
 output_file_path = os.path.join(path, "hiddencat.bmp")

@@ -37,7 +37,7 @@ string extract_message(const vector<char>& data, int offset) {
     for (int i = 0; i < 32; ++i) {
         base64_length = (base64_length << 1) | (data[offset + i] & 1);
     }
-    std::cout << "Extracted Base64 length (in characters): " << base64_length << std::endl;
+    cout << "Extracted Base64 length (in characters): " << base64_length << endl;
 
     // Extract the binary message
     string binary_message;
@@ -57,6 +57,9 @@ string extract_message(const vector<char>& data, int offset) {
         }
     }
 
+    cout << "Extracted Base64 message: " << base64_message << endl;
+    cout << "Extracted Binary message: " << binary_message << endl;
+
     return base64_decode(base64_message);
 }
 
@@ -65,7 +68,7 @@ int main()
     string path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography";
     string encoded_file_path = path + "/encoded.bmp";
     
-    std::ifstream input_file(encoded_file_path, std::ios::binary);
+    ifstream input_file(encoded_file_path, ios::binary);
     vector<char> data;
     char ch;
     while (input_file.get(ch)) {
@@ -74,10 +77,10 @@ int main()
     input_file.close();
 
     int pixel_data_offset = *reinterpret_cast<int*>(&data[10]);
-    std::cout << "Pixel data offset: " << pixel_data_offset << std::endl;
+    cout << "Pixel data offset: " << pixel_data_offset << endl;
 
     string hidden_message = extract_message(data, pixel_data_offset);
-    std::cout << "Extracted message: " << hidden_message << std::endl;
+    cout << "Extracted message: " << hidden_message << endl;
 
     return 0;
 }

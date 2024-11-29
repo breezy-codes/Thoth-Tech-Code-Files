@@ -60,6 +60,9 @@ class Program
             }
         }
 
+        Console.WriteLine($"Extracted Base64 message: {base64Message}");
+        Console.WriteLine($"Extracted Binary message: {binaryMessage}");
+
         return Base64Decode(base64Message.ToString());
     }
 

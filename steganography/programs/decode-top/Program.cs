@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
+string path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography";
+string encodedFilePath = Path.Combine(path, "encoded.bmp");
+
 string Base64Decode(string input)
 {
     string BASE64_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
@@ -58,11 +61,11 @@ string ExtractMessage(List<byte> data, int offset)
         }
     }
 
+    Console.WriteLine($"Extracted Base64 message: {base64Message}");
+    Console.WriteLine($"Extracted Binary message: {binaryMessage}");
+
     return Base64Decode(base64Message.ToString());
 }
-
-string path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography";
-string encodedFilePath = Path.Combine(path, "encoded.bmp");
 
 if (!File.Exists(encodedFilePath))
 {

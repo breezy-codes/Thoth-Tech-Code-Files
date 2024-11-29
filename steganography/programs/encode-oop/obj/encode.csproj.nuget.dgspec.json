@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode/encode.csproj": {}
+    "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode-oop/encode.csproj": {}
   },
   "projects": {
-    "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode/encode.csproj": {
+    "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode-oop/encode.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode/encode.csproj",
+        "projectUniqueName": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode-oop/encode.csproj",
         "projectName": "encode",
-        "projectPath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode/encode.csproj",
+        "projectPath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode-oop/encode.csproj",
         "packagesPath": "/home/breezy/.nuget/packages/",
-        "outputPath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode/obj/",
+        "outputPath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/encode-oop/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/breezy/.nuget/NuGet/NuGet.Config"
