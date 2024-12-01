@@ -1,0 +1,15 @@
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/bin/Debug/net8.0/encode-top
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/bin/Debug/net8.0/encode-top.deps.json
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/bin/Debug/net8.0/encode-top.runtimeconfig.json
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/bin/Debug/net8.0/encode-top.dll
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/bin/Debug/net8.0/encode-top.pdb
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/obj/Debug/net8.0/encode-top.GeneratedMSBuildEditorConfig.editorconfig
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/obj/Debug/net8.0/encode-top.AssemblyInfoInputs.cache
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/obj/Debug/net8.0/encode-top.AssemblyInfo.cs
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/obj/Debug/net8.0/encode-top.csproj.CoreCompileInputs.cache
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/obj/Debug/net8.0/encode-top.sourcelink.json
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/obj/Debug/net8.0/encode-top.dll
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/obj/Debug/net8.0/refint/encode-top.dll
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/obj/Debug/net8.0/encode-top.pdb
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/obj/Debug/net8.0/encode-top.genruntimeconfig.cache
+/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/morse-code/program_files/encode-top/obj/Debug/net8.0/ref/encode-top.dll
