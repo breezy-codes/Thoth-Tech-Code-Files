@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("decode-oop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e8991f90a5b9e7f37df09f4fb60d3b577ac56756")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ebdc9695b6108fb5772741cd00c765640df9a6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("decode-oop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("decode-oop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
