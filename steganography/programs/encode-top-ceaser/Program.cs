@@ -57,6 +57,29 @@ string Base64Encode(string input)
     return encodedString;
 }
 
+// This will allow us to highlight the differences in the binary data
+(string, string) HighlightChanges(string original, string modified)
+{
+    StringBuilder highlightedOriginal = new StringBuilder();
+    StringBuilder highlightedModified = new StringBuilder();
+
+    for (int i = 0; i < original.Length; i++)
+    {
+        if (original[i] != modified[i])
+        {
+            highlightedOriginal.Append($"[{original[i]}]");
+            highlightedModified.Append($"[{modified[i]}]");
+        }
+        else
+        {
+            highlightedOriginal.Append(original[i]);
+            highlightedModified.Append(modified[i]);
+        }
+    }
+
+    return (highlightedOriginal.ToString(), highlightedModified.ToString());
+}
+
 List<byte> EmbedMessage(List<byte> data, string message, int offset)
 {
     // Ask the user for the Caesar shift
@@ -118,6 +141,9 @@ List<byte> EmbedMessage(List<byte> data, string message, int offset)
         modifiedBinary.Append(Convert.ToString(modifiedData[offset + i], 2).PadLeft(8, '0'));
     }
 
+    // Highlight changes
+    (string highlightedOriginal, string highlightedModified) = HighlightChanges(originalBinary.ToString(), modifiedBinary.ToString());
+
     // Truncate for readability
     string TruncateBinary(string binaryStr, int showBits = 64)
     {
@@ -129,11 +155,11 @@ List<byte> EmbedMessage(List<byte> data, string message, int offset)
     }
 
     Console.WriteLine("\nOriginal binary data at embedding positions (truncated):");
-    Console.WriteLine(TruncateBinary(originalBinary.ToString()));
+    Console.WriteLine(TruncateBinary(highlightedOriginal));
 
     Console.WriteLine("\nModified binary data at embedding positions (truncated):");
-    Console.WriteLine(TruncateBinary(modifiedBinary.ToString()));
-
+    Console.WriteLine(TruncateBinary(highlightedModified));
+    
     return modifiedData;
 }
 

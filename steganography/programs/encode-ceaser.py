@@ -35,6 +35,21 @@ def base64_encode(input_string):
     
     return encoded_string
 
+# This will allow us to highlight the differences in the binary data
+def highlight_changes(original, modified):
+    highlighted_original = []
+    highlighted_modified = []
+
+    for o, m in zip(original, modified):
+        if o != m:
+            highlighted_original.append(f"[{o}]")
+            highlighted_modified.append(f"[{m}]")
+        else:
+            highlighted_original.append(o)
+            highlighted_modified.append(m)
+
+    return ''.join(highlighted_original), ''.join(highlighted_modified)
+
 def embed_message(data, message, offset, shift):
     # Apply Caesar cipher shift to the message
     shifted_message = ceaser_cipher_encode(message, shift)
@@ -66,6 +81,8 @@ def embed_message(data, message, offset, shift):
     # Extract modified binary at embedding positions
     modified_binary = "".join(format(modified_data[offset + i], '08b') for i in range(len(length_bits + binary_message)))
 
+    highlighted_original, highlighted_modified = highlight_changes(original_binary, modified_binary)
+    
     # Truncate for readability
     def truncate_binary(binary_str, show_bits=64):
         if len(binary_str) > show_bits * 2:
@@ -73,10 +90,10 @@ def embed_message(data, message, offset, shift):
         return binary_str
 
     print("\nOriginal binary data at embedding positions (truncated):")
-    print(truncate_binary(original_binary))
+    print(truncate_binary(highlighted_original))
 
     print("\nModified binary data at embedding positions (truncated):")
-    print(truncate_binary(modified_binary))
+    print(truncate_binary(highlighted_modified))
 
     return modified_data
 

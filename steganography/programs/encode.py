@@ -1,4 +1,5 @@
 import os
+
 path = "/home/breezy/Documents/GitHub/Small-Projects/Thoth-Tech-Code-Files/steganography/programs/"
 
 def base64_encode(input_string):
@@ -23,6 +24,21 @@ def base64_encode(input_string):
         encoded_string += "="
     
     return encoded_string
+
+# This will allow us to highlight the differences in the binary data
+def highlight_changes(original, modified):
+    highlighted_original = []
+    highlighted_modified = []
+
+    for o, m in zip(original, modified):
+        if o != m:
+            highlighted_original.append(f"[{o}]")
+            highlighted_modified.append(f"[{m}]")
+        else:
+            highlighted_original.append(o)
+            highlighted_modified.append(m)
+
+    return ''.join(highlighted_original), ''.join(highlighted_modified)
 
 def embed_message(data, message, offset):
     # Encode the message using Base64
@@ -49,6 +65,9 @@ def embed_message(data, message, offset):
     # Extract modified binary at embedding positions
     modified_binary = "".join(format(modified_data[offset + i], '08b') for i in range(len(length_bits + binary_message)))
 
+    # Highlight changes
+    highlighted_original, highlighted_modified = highlight_changes(original_binary, modified_binary)
+
     # Truncate for readability
     def truncate_binary(binary_str, show_bits=64):
         if len(binary_str) > show_bits * 2:
@@ -56,17 +75,19 @@ def embed_message(data, message, offset):
         return binary_str
 
     print("\nOriginal binary data at embedding positions (truncated):")
-    print(truncate_binary(original_binary))
+    print(truncate_binary(highlighted_original))
 
     print("\nModified binary data at embedding positions (truncated):")
-    print(truncate_binary(modified_binary))
+    print(truncate_binary(highlighted_modified))
 
     return modified_data
 
 
 input_file_path = os.path.join(path, "cat.bmp")
 output_file_path = os.path.join(path, "hiddencat.bmp")
-with open(input_file_path, "rb") as f:data = f.read()
+
+with open(input_file_path, "rb") as f:
+    data = f.read()
 
 print("Enter the message to embed: ")
 message_to_embed = input()
@@ -75,5 +96,8 @@ message_to_embed = input()
 pixel_data_offset = int.from_bytes(data[10:14], byteorder='little')
 
 encoded_data = embed_message(data, message_to_embed, pixel_data_offset)
-with open(output_file_path, "wb") as f: f.write(encoded_data)
+
+with open(output_file_path, "wb") as f:
+    f.write(encoded_data)
+
 print(f"Message embedded successfully in Base64! Encoded image saved as {output_file_path}.")

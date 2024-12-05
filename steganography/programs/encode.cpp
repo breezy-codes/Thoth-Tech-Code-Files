@@ -38,6 +38,26 @@ string base64_encode(const string &input)
     return encoded_string;
 }
 
+// This will allow us to highlight the differences in the binary data
+pair<string, string> highlight_changes(const string &original, const string &modified)
+{
+    string highlighted_original, highlighted_modified;
+    for (size_t i = 0; i < original.size(); ++i)
+    {
+        if (original[i] != modified[i])
+        {
+            highlighted_original += "[" + string(1, original[i]) + "]";
+            highlighted_modified += "[" + string(1, modified[i]) + "]";
+        }
+        else
+        {
+            highlighted_original += original[i];
+            highlighted_modified += modified[i];
+        }
+    }
+    return {highlighted_original, highlighted_modified};
+}
+
 vector<char> embed_message(const vector<char>& data, const string& message, int offset) {
     // Encode the message using Base64
     string base64_message = base64_encode(message);
@@ -78,6 +98,9 @@ vector<char> embed_message(const vector<char>& data, const string& message, int 
         modified_binary += bitset<8>(modified_data[offset + i]).to_string();
     }
 
+    // Highlight changes
+    auto [highlighted_original, highlighted_modified] = highlight_changes(original_binary, modified_binary);
+
     // Truncate for readability
     auto truncate_binary = [](const string& binary_str, size_t show_bits = 64) {
         if (binary_str.length() > show_bits * 2) {
@@ -87,10 +110,10 @@ vector<char> embed_message(const vector<char>& data, const string& message, int 
     };
 
     cout << "\nOriginal binary data at embedding positions (truncated):" << endl;
-    cout << truncate_binary(original_binary) << endl;
+    cout << truncate_binary(highlighted_original) << endl;
 
     cout << "\nModified binary data at embedding positions (truncated):" << endl;
-    cout << truncate_binary(modified_binary) << endl;
+    cout << truncate_binary(highlighted_modified) << endl;
 
     return modified_data;
 }
