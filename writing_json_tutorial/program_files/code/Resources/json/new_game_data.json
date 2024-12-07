@@ -1,0 +1,14 @@
+{
+    "fullScreenMode": false,
+    "gameTitle": "My New Game",
+    "levels": [
+        "level1",
+        "level2",
+        "level3"
+    ],
+    "numPlayers": 1,
+    "screenSize": {
+        "height": 600,
+        "width": 800
+    }
+}
