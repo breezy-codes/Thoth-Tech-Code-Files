@@ -1,30 +1,51 @@
 #include "splashkit.h"
+#include <string>
+
+// Function to convert double to string
+string convert_to_string(double x)
+{
+    return std::to_string(x);
+}
 
 int main()
 {
-    // Create and initialise new window with title and dimensions
-    window wnd = open_window("Distance From Center", 600, 600);
-    clear_screen();
+    // Variable Declarations
+    double bar_x = 100;
+    line slider = line_from(100, 300, 500, 300);
+    line bar = line_from(bar_x, 310, bar_x, 290);
+    double percent = 0;
+    string volume = "Volume: ";
 
-    // Create circle at the center of window
-    fill_circle_on_window(wnd, COLOR_RED, 300, 300, 6);
+    // Create window and draw initial lines
+    open_window("Volume Slider", 600, 600);
+    clear_screen(color_white());
+
+    draw_line(color_black(), slider);
+    draw_line(color_black(), bar);
+    draw_text(volume + convert_to_string(percent), color_black(), 200, 450);
     refresh_screen();
 
-    // While window is open
-    while(!quit_requested())
+    while (!quit_requested())
     {
         process_events();
 
-        // Point of center
-        point_2d center = screen_center();
+        // Check if user is holding click on the bar line
+        while (mouse_down(LEFT_BUTTON) && point_on_line(mouse_position(), bar))
+        {
+            clear_screen(color_white());
+            bar_x = mouse_position().x;                    // sets bar_x value to mouse x value
+            percent = ((bar_x - 100) / (500 - 100)) * 100; // convert bar_x position to percent value
+            bar = line_from(bar_x, 310, bar_x, 290);
 
-        // Point of cursor position
-        point_2d mouse = mouse_position();
-
-        // Print distance to terminal
-        write_line(point_point_distance(center, mouse));
+            // redraw lines and volume text
+            draw_line(color_black(), bar);
+            draw_line(color_black(), slider);
+            draw_text(volume + convert_to_string(percent), color_black(), 200, 450);
+            refresh_screen();
+            process_events();
+        }
     }
-
-    // Close all opened windows
     close_all_windows();
+
+    return 0;
 }

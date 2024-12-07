@@ -41,11 +41,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/peer-reviews/template_folder/program_files/Code1/Code1.csproj",
+      "projectUniqueName": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/peer-reviews/5-point-point-distance/program_files/Code1/Code1.csproj",
       "projectName": "Code1",
-      "projectPath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/peer-reviews/template_folder/program_files/Code1/Code1.csproj",
+      "projectPath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/peer-reviews/5-point-point-distance/program_files/Code1/Code1.csproj",
       "packagesPath": "/home/breezy/.nuget/packages/",
-      "outputPath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/peer-reviews/template_folder/program_files/Code1/obj/",
+      "outputPath": "/run/media/breezy/b1de4ffb-fd5e-4613-986d-b119a4c02043/GitHub/Small-Projects/Thoth-Tech-Code-Files/peer-reviews/5-point-point-distance/program_files/Code1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/breezy/.nuget/NuGet/NuGet.Config"
@@ -91,7 +91,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.8, 8.0.8]"
+            "version": "[8.0.10, 8.0.10]"
           }
         ],
         "frameworkReferences": {
@@ -99,7 +99,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.108/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
