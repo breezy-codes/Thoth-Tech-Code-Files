@@ -1,32 +1,24 @@
 from splashkit import *
 
-# Load the game data JSON
-game_data = json_from_file("game_data.json")
+# Initialize Raspberry Pi GPIO
+raspi_init()
+led_pin = PIN_11  # Define the pin for the LED
+raspi_set_mode(led_pin, GPIO_OUTPUT)  # Set the pin as output
 
-# Read basic values
-title = json_read_string(game_data, "gameTitle")
-num_players = json_read_number_as_int(game_data, "numPlayers")
-is_full_screen = json_read_bool(game_data, "fullScreenMode")
+# Open a dummy window
+open_window("dummy_window", 1, 1)
 
-# write_line the values
-write_line(f"Game Title: {title}")
-write_line(f"Number of Players: {num_players}")
-write_line(f"Full Screen Mode: {is_full_screen}")
+while not any_key_pressed():
+    process_events()
+    
+    # Turn the LED on (HIGH)
+    raspi_write(led_pin, GPIO_HIGH)
+    delay(500)
 
-levels = []
+    # Turn the LED off (LOW)
+    raspi_write(led_pin, GPIO_LOW)
+    delay(500)
 
-json_read_array_of_string(game_data, "levels", levels)
-
-num_levels = len(levels)
-
-for i in range(num_levels):
-    write_line(f"Got level: {levels[i]}")
-
-# Read the screen size object
-game_screen_size = json_read_object(game_data, "screenSize")
-width = json_read_number_as_int(game_screen_size, "width")
-height = json_read_number_as_int(game_screen_size, "height")
-
-# write_line screen size
-write_line(f"Screen Width: {width}")
-write_line(f"Screen Height: {height}")
+# Close all windows and cleanup GPIO
+close_all_windows()
+raspi_cleanup()

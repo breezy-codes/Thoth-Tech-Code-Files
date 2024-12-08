@@ -1,0 +1,2 @@
+from splashkit import *
+

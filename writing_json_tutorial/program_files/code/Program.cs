@@ -1,35 +1,42 @@
 ﻿using SplashKitSDK;
-using static SplashKitSDK.SplashKit;
 
-// Load the game data JSON file
-Json gameData = JsonFromFile("game_data.json");
-
-// Read the game data from the JSON
-string title = JsonReadString(gameData, "gameTitle");
-int numPlayers = JsonReadNumberAsInt(gameData, "numPlayers");
-bool isFullScreen = JsonReadBool(gameData, "fullScreenMode");
-List<string> levels = new List<string>();
-
-// Write the game data to the terminal
-WriteLine($"Game Title: {title}");
-WriteLine($"Number of Players: {numPlayers}");
-WriteLine($"Full Screen Mode: {isFullScreen}");
-
-// Read the levels array from the JSON
-JsonReadArray(gameData, "levels", ref levels);
-
-int numLevels = levels.Count;
-
-for (int i = 0; i < numLevels; i++)
+namespace RaspberryPiButtonLED
 {
-    WriteLine($"Got level: {levels[i]}");
+    public class Program
+    {
+        public static void Main()
+        {
+            SplashKit.RaspiInit();
+            Pins buttonPin = (Pins)29;
+            Pins ledPin = (Pins)11;
+            PinValues ledState = (PinValues)0;
+
+            SplashKit.RaspiSetMode(buttonPin, (PinModes)0);
+            SplashKit.RaspiSetMode(ledPin, (PinModes)1);
+
+            SplashKit.RaspiSetPullUpDown(buttonPin, (PullUpDown)1);
+
+            SplashKit.OpenWindow("dummy_window", 1, 1);
+            while (!SplashKit.AnyKeyPressed())
+            {
+                SplashKit.ProcessEvents();
+
+                if (SplashKit.RaspiRead(buttonPin) == (PinValues)1)
+                {
+                    ledState = SplashKit.RaspiRead(ledPin);
+                    if (ledState == (PinValues)0)
+                    {
+                        SplashKit.RaspiWrite(ledPin, (PinValues)1);
+                    }
+                    else
+                    {
+                        SplashKit.RaspiWrite(ledPin, (PinValues)0);
+                    }
+                }
+            }
+
+            SplashKit.CloseAllWindows();
+            SplashKit.RaspiCleanup();
+        }
+    }
 }
-
-// Extract the nested JSON objects
-Json gameScreenSize = JsonReadObject(gameData, "screenSize");
-int width = JsonReadNumberAsInt(gameScreenSize, "width");
-int height = JsonReadNumberAsInt(gameScreenSize, "height");
-
-// Write the screen size to the terminal
-WriteLine($"Screen Width: {width}");
-WriteLine($"Screen Height: {height}");
