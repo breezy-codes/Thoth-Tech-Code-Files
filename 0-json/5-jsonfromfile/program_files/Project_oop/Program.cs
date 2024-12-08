@@ -16,9 +16,20 @@ namespace JsonFromFile
             SplashKit.WriteLine("Saving JSON to file...");
             SplashKit.JsonToFile(json_obj, "example.json");
 
-            // Free the JSON object
+            // Free the original JSON object
             SplashKit.FreeJson(json_obj);
-            SplashKit.WriteLine("JSON object freed.");
+            SplashKit.WriteLine("Original JSON object freed.");
+
+            // Load the JSON object back from the file
+            SplashKit.WriteLine("Reading JSON from file...");
+            Json json_from_file_obj = SplashKit.JsonFromFile("example.json");
+
+            // Display the JSON object read from the file
+            SplashKit.WriteLine("JSON read from file:");
+            SplashKit.WriteLine(SplashKit.JsonToString(json_from_file_obj));
+
+            // Free the loaded JSON object
+            SplashKit.FreeJson(json_from_file_obj);
         }
     }
 }
