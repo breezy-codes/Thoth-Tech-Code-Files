@@ -1,6 +1,6 @@
 ﻿using SplashKitSDK;
 
-namespace Program
+namespace CheckTerminalInput
 {
     public class Program
     {
@@ -10,21 +10,26 @@ namespace Program
             SplashKit.WriteLine("Type something and press Enter to see it echoed back.");
             SplashKit.WriteLine("Type 'exit' and press Enter to quit the program.");
 
-            while (true)
+            string input;
+
+            do
             {
-                // Check if there's input waiting in the terminal
+                // Wait for input if available
                 if (SplashKit.TerminalHasInput())
                 {
-                    // Read and echo the input
-                    string input = SplashKit.ReadLine();
-                    if (input == "exit")
+                    input = SplashKit.ReadLine();
+                    if (input != "exit")
                     {
-                        SplashKit.WriteLine("Exiting the program...");
-                        break;
+                        SplashKit.WriteLine("You typed: " + input);
                     }
-                    SplashKit.WriteLine("You typed: " + input);
                 }
-            }
+                else
+                {
+                    input = string.Empty; // If no input, continue waiting
+                }
+            } while (input != "exit");
+
+            SplashKit.WriteLine("Exiting the program...");
         }
     }
 }

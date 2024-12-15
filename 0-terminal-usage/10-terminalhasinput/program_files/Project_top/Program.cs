@@ -4,18 +4,23 @@ WriteLine("Welcome to the Terminal Input Checker!");
 WriteLine("Type something and press Enter to see it echoed back.");
 WriteLine("Type 'exit' and press Enter to quit the program.");
 
-while (true)
+string input;
+
+do
 {
-    // Check if there's input waiting in the terminal
+    // Wait for input if available
     if (TerminalHasInput())
     {
-        // Read and echo the input
-        string input = ReadLine();
-        if (input == "exit")
+        input = ReadLine();
+        if (input != "exit")
         {
-            WriteLine("Exiting the program...");
-            break;
+            WriteLine("You typed: " + input);
         }
-        WriteLine("You typed: " + input);
     }
-}
+    else
+    {
+        input = string.Empty; // If no input, continue waiting
+    }
+} while (input != "exit");
+
+WriteLine("Exiting the program...");
